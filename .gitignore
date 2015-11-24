@@ -1,0 +1,7 @@
+*.user
+*.suo
+*.ncb
+*/moc/*.*
+moc_*.*
+*.filters
+qrc_*.*

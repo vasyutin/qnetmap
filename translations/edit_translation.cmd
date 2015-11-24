@@ -1,0 +1,1 @@
+start %QTDIR%\bin\linguist.exe qnetmap_ru.ts

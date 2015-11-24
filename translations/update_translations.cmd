@@ -1,0 +1,1 @@
+%QTDIR%\bin\lupdate.exe %QNETMAP%\lib %QNETMAP%\mapsspider %QNETMAP%\mapsviewer -no-obsolete -codecfortr UTF-8 -ts qnetmap_ru.ts

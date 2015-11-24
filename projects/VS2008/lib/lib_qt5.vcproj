@@ -1,0 +1,2058 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="qnetmap"
+	ProjectGUID="{F8EB2711-6F02-417B-807A-167A8F564052}"
+	RootNamespace="qnetmap"
+	Keyword="Qt4VSv1.0"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/MP"
+				Optimization="3"
+				WholeProgramOptimization="true"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\moc\$(PlatformName)&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				PreprocessorDefinitions="NDEBUG;WIN32;QT_NO_DEBUG;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				ExceptionHandling="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				DebugInformationFormat="0"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/MP"
+				Optimization="3"
+				WholeProgramOptimization="true"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\moc\$(PlatformName)&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				PreprocessorDefinitions="NDEBUG;WIN32;QT_NO_DEBUG;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				ExceptionHandling="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				DebugInformationFormat="0"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			CharacterSet="1"
+			WholeProgramOptimization="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+				CommandLine="set PATH=$(QTDIR)/bin.$(PlatformName);%PATH%"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/MP"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\moc\$(PlatformName)&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				ExceptionHandling="1"
+				RuntimeLibrary="3"
+				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="set &gt; c:\var\1.txt"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			CharacterSet="1"
+			WholeProgramOptimization="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+				CommandLine="set PATH=$(QTDIR)/bin.$(PlatformName);%PATH%"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/MP"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\moc\$(PlatformName)&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				ExceptionHandling="1"
+				RuntimeLibrary="3"
+				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="set &gt; c:\var\1.txt"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="src"
+			Filter="cpp;cxx;c;def"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_arbitraryfigure.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_area.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_arrowpoint.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_base.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_basepoint.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_checkproxy.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_circlepoint.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_coordinatesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_currentcoordinate.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_curve.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_emptymapadapter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_fixedimageoverlay.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometry.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometrylayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometryobject.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_global.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_gps_position.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_httpparameters.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_imagemanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_label.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_layer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_layermanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_linestring.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_loaddialogwizard.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_loadprogressbar.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapadapter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapadapterparameters.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapcontrol.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_maplayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapnetwork.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_pngimage.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_point.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_polygon.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_polyline.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rastermap.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rastermapadapter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rastermapsdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rulerscaling.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_shape.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_tilemapadapter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_tilemapadapterparameters.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_universaltilemapadapter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_universaltilemapxmlhandler.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_utmpoint.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_widget.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="headers"
+			Filter="h"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_arbitraryfigure.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_base.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_coordinatesdialog.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_currentcoordinate.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_curve.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_emptymapadapter.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometry.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometrylayer.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_geometryobject.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_imagemanager.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_imagepoint.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_interfaces.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_label.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_layer.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_layermanager.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_loaddialogwizard.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_loadprogressbar.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapadapter.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapcontrol.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_maplayer.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mapnetwork.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_point.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_polygon.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rastermapadapter.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rastermapsdialog.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_rulerscaling.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_shape.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_tilemapadapter.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_translator.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_universaltilemapadapter.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_visual_elments.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_widget.h"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="$(QTDIR)\bin.$(PlatformName)\moc.exe $(InputPath) -o $(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin.$(PlatformName)\moc.exe"
+						Outputs="$(ProjectDir)moc\$(PlatformName)\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="moc"
+			Filter="moc;h;cpp"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}"
+			>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_mocs.cpp"
+				>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+		<Global
+			Name="MocDir"
+			Value=".\moc"
+		/>
+		<Global
+			Name="QtVersion"
+			Value="4.6.3"
+		/>
+		<Global
+			Name="QtVersion Win32"
+			Value="$(DefaultQtVersion)"
+		/>
+		<Global
+			Name="RccDir"
+			Value=".\moc"
+		/>
+		<Global
+			Name="UicDir"
+			Value=".\moc"
+		/>
+	</Globals>
+</VisualStudioProject>

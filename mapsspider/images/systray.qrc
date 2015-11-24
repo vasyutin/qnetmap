@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>globe32.png</file>
+        <file>globe32_1.png</file>
+        <file>globe32_10.png</file>
+        <file>globe32_2.png</file>
+        <file>globe32_3.png</file>
+        <file>globe32_4.png</file>
+        <file>globe32_5.png</file>
+        <file>globe32_6.png</file>
+        <file>globe32_7.png</file>
+        <file>globe32_8.png</file>
+        <file>globe32_9.png</file>
+        <file>globe32_accept.png</file>
+        <file>globe32_error.png</file>
+    </qresource>
+</RCC>
