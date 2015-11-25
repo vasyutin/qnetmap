@@ -10,8 +10,8 @@ disk cache. User's own raster maps can also be used.
 QNetMap supports layers so you can mix maps from different servers. To enrich the map 
 presentation you can draw your own objects in the given coordinates.
 
-The development of the library was supported by the "Sintels" LLC («¿Œ "—ËÌÚÂÎÒ" - 
-http://sintels.ru) and OJSC "T8" (Œ¿Œ "“8" - https://t8.ru). 
+The development of the library was supported by the "Sintels" LLC (–ó–ê–û "–°–∏–Ω—Ç–µ–ª—Å" - 
+http://sintels.ru) and OJSC "T8" (–û–ê–û "–¢8" - https://t8.ru). 
 
 Written by Sergey Shumeyko (sergey.shumeyko@gmail.com) and Sergey Vasyutin 
 (sv.public@yandex.ru).
