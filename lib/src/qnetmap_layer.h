@@ -59,7 +59,7 @@ namespace qnetmap
       inline const QString& layername(void) const { return m_Layername; }
       //! \brief returns the layer's MapAdapter
       inline const TMapAdapter* mapadapter(void) const { return w_MapAdapter; }
-      //! \brief adds a Geometry object to this Layer
+      //! \brief Adds a geometry object to the layer. The layout Takes ownership of the geometry.
       void addGeometry(TGeometry* geometry, bool NoUpdate_ = false);
       //! \brief removes the Geometry object from this Layer
       bool removeGeometry(TGeometry* Geometry_, const bool SendUpdate_ = true);

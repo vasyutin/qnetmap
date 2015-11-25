@@ -1,6 +1,6 @@
 @echo off
 
-set MAKER=..\..\scripts\project_make_all.cmd
+set MAKER=..\..\scripts\vs2008\project_make_all.cmd
 
 call %MAKER% qnetmap.sln qnetmap %1
 

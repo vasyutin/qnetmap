@@ -235,7 +235,7 @@ namespace qnetmap
                    Event_->y() - m_ScreenMiddle.y() + MapMiddle_px.y()));
          foreach(TGeometry *Geometry, m_Geometries) {
             if((EditMode || !Geometry->isStatic()) && Geometry->visible() && Geometry->touches(Point)) {
-               LayerManager_->addToolTipText(Geometry->description(), Geometry->descriptionColor());
+               LayerManager_->addToolTipText(Geometry->description(Point), Geometry->descriptionColor());
                }
             }
          }

@@ -404,6 +404,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\mapsviewer\src\gpx.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\mapsviewer\src\main.cpp"
 				>
 			</File>

@@ -79,7 +79,9 @@ namespace qnetmap
       //! \param Name_ the new name of the geometry
       virtual void setName(QString const& Name_);
       //! \brief return the description of the geometry
-      virtual const QString& description(void) const { return m_Description; }
+      virtual QString description(const QPointF Point_ = QPointF()) const {
+			Q_UNUSED(Point_); return m_Description; 
+			}
       //! \brief sets the description of the geometry
       virtual void setDescription(const QString& Description_) { m_Description = Description_; }
       //! \brief returns the pointer to the adapter card, which draws geometry
