@@ -88,8 +88,6 @@ namespace qnetmap
    //////////////////////////////////////////////////////////////////////////
    class QNETMAP_EXPORT TMapWidget: public TMapControl 
    {
-      typedef TMapControl TParent;
-
       Q_OBJECT
 
    public:

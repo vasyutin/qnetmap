@@ -92,7 +92,7 @@ namespace qnetmap
    }
 
    //----------------------------------------------------------------
-   TLayers const& TLayerManager::layers()
+   const TLayers& TLayerManager::layers()
    {
       return m_Layers;
    }

@@ -49,8 +49,6 @@ namespace qnetmap
    //! \brief The control element of the widget and also the widget itself
    class QNETMAP_EXPORT TMapControl : public QWidget
    {
-      typedef QWidget TParent;
-
       Q_OBJECT
 
    public:

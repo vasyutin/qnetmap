@@ -36,7 +36,7 @@
 namespace qnetmap
 {
    //! \class The base class for all library
-   class TBase : public QObject 
+   class TBase: public QObject
    {
       Q_OBJECT
 
@@ -58,7 +58,7 @@ namespace qnetmap
       //! \param QObject* Sender_ - a pointer to the class that generates the message
       static void qnetmaplog(const QString& Message_, QObject* Sender_ = NULL, int Flags_ = Consts::ToLog | Consts::ShowClassName);
       //! \brief the top left point, aligned with respect to the anchor point
-      static QPoint alignedPoint(const QPoint& Point_, const QSize& Size_, const enum TAlignment Alignment_);
+      static QPoint alignedPoint(const QPoint& Point_, const QSize& Size_, const TAlignment Alignment_);
       //! \brief вычисляет цвет и прозрачность среднего пиксела для алгоритма размытия рисунка
       //! \param QRgb* j - указатель на первый пиксел
       //! \param QRgb* n - указатель на второй (средний) пиксел

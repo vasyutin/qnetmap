@@ -93,7 +93,7 @@ namespace qnetmap
       /*!
       * @return returns a QList with the pointers to all layers
       */
-      TLayers const& TLayerManager::layers();
+      const TLayers& layers();
 
       //! sets the middle of the map to the given coordinate
       /*!

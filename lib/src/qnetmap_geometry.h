@@ -48,7 +48,7 @@ namespace qnetmap
 
    //! \class TGeometry
    //! \brief Main class for objects that should be painted in maps
-   class QNETMAP_EXPORT TGeometry : public TBase, public TBasePoint
+   class QNETMAP_EXPORT TGeometry: public TBase, public TBasePoint
    {
       Q_OBJECT
 
@@ -295,7 +295,7 @@ namespace qnetmap
       //! \brief set the point anchor
       void setCoordinate(QPointF const& Point_, const bool SetModified_ = true);
       //! \brief if Visible_ is true, the geometry is made visible
-      inline void setVisible(bool Visible_);
+      void setVisible(bool Visible_);
    };
 }
 #endif
