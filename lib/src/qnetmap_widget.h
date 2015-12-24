@@ -346,9 +346,9 @@ namespace qnetmap
       void hideAllTransparentMaps(void);
       //! \brief Адаптер основной карты
       //! \return TMapAdapter* - указатель на адаптер основной карты
-      inline TMapAdapter* baseMapAdapter(void) const { return w_BaseMapAdapter; }
+      TMapAdapter* baseMapAdapter(void) const { return w_BaseMapAdapter; }
       //! \brief Указатель на информационный уровень
-      inline TLayer* geometryLayer(void) const { return w_GeometryLayer; }
+      TLayer* geometryLayer(void) const { return w_GeometryLayer; }
       //! \brief Инициализация растровых карт
       static void initializeRasterMaps(void);
       //! \brief Устанавливает видимость слоя с картой

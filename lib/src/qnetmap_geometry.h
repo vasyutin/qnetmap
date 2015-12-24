@@ -85,36 +85,36 @@ namespace qnetmap
       //! \brief sets the description of the geometry
       virtual void setDescription(const QString& Description_) { m_Description = Description_; }
       //! \brief returns the pointer to the adapter card, which draws geometry
-      inline TMapAdapter* mapAdapter(void) const { return w_MapAdapter; }
+      TMapAdapter* mapAdapter(void) const { return w_MapAdapter; }
       //! \brief sets the pointer to the adapter card, which draws geometry
-      inline void setMapAdapter(TMapAdapter* MapAdapter_) { w_MapAdapter = MapAdapter_; }
+      void setMapAdapter(TMapAdapter* MapAdapter_) { w_MapAdapter = MapAdapter_; }
       //! \brief the level of transparency (alpha-channel) the geometry
-      inline unsigned char transparencyLevel(void) const { return m_TransparencyLevel; }
+      unsigned char transparencyLevel(void) const { return m_TransparencyLevel; }
       //! \brief sets the level of transparency (alpha-channel) the geometry
-      inline void setTransparencyLevel(const unsigned char TransparencyLevel_) { m_TransparencyLevel = TransparencyLevel_; update(); }
+      void setTransparencyLevel(const unsigned char TransparencyLevel_) { m_TransparencyLevel = TransparencyLevel_; update(); }
       //! \brief returns the QPen which is used on drawing
-      inline QPen* pen(void) const { return w_Pen; }
+      QPen* pen(void) const { return w_Pen; }
       //! \brief set the QPen which is used on drawing
-      inline void setPen(QPen* Pen_) { w_Pen = Pen_; }
+      void setPen(QPen* Pen_) { w_Pen = Pen_; }
       //! \brief Layer containing this element
-      inline TLayer* layer(void) { return w_Layer; }
+      TLayer* layer(void) { return w_Layer; }
       //! \brief 
-      inline void setLayer(TLayer* Layer_) { w_Layer = Layer_; }
+      void setLayer(TLayer* Layer_) { w_Layer = Layer_; }
       //! \brief selection state
-      inline bool selected(void) const { return m_IsSelected; }
+      bool selected(void) const { return m_IsSelected; }
       //! \brief if Selected_ is true, the geometry is made selected
-      inline void setSelected(const bool Selected_, const bool SendUpdate_ = true);
+      void setSelected(const bool Selected_, const bool SendUpdate_ = true);
       //! \brief focused state
-      inline bool focused(void) const { return m_IsFocused; }
+      bool focused(void) const { return m_IsFocused; }
       //! \brief if Focused_ is true, the geometry is made focused
-      inline void setFocused(const bool Focused_, const bool SendUpdate_ = true);
+      void setFocused(const bool Focused_, const bool SendUpdate_ = true);
       //! \brief modified state
-      inline bool modified(void) const { return m_IsModified; }
+      bool modified(void) const { return m_IsModified; }
       //! \brief if Modified_ is true, the geometry is made modified
-      inline void setModified(const bool Modified_ = true, const bool EmitSignal_ = true);
+      void setModified(const bool Modified_ = true, const bool EmitSignal_ = true);
       //! \brief visibility
-      inline bool visible(void) const { return m_IsVisible; }
-		/*obsolete*/ inline bool isVisible(void) const { return m_IsVisible; }
+      bool visible(void) const { return m_IsVisible; }
+		/*obsolete*/ bool isVisible(void) const { return m_IsVisible; }
 
       //! \brief Must be call when geometry is clicked
       virtual void clicked(const QPointF Point_, QMouseEvent* Event_);
@@ -129,7 +129,7 @@ namespace qnetmap
       //! \brief calculates the geographic distance in meters to the other figures on the Google sphere
       virtual qreal distance(TGeometry* Geometry_);
       //! \brief figure type
-      inline const QString& geometryType(void) const { return m_GeometryType; }
+      const QString& geometryType(void) const { return m_GeometryType; }
       //! \brief returns outline drawing (to check touches figures)
       virtual QPainterPath painterPath(void);
       //! \brief surrounding rectangle in geographical coordinates
@@ -149,33 +149,33 @@ namespace qnetmap
       //! \brief 
       virtual void update(void);
       //! \brief 
-      inline void* userTag(void) const { return w_UserTag; }
+      void* userTag(void) const { return w_UserTag; }
       //! \brief 
-      inline void setUserTag(void* Tag_) { w_UserTag = Tag_; }
+      void setUserTag(void* Tag_) { w_UserTag = Tag_; }
       //! \brief 
-      inline const QString& userString(void) { return m_UserString; }
+      const QString& userString(void) { return m_UserString; }
       //! \brief 
-      inline void setUserString(const QString& String_) { m_UserString = String_; }
+      void setUserString(const QString& String_) { m_UserString = String_; }
       //! \brief 
-      inline bool backPlane(void) const { return m_BackPlane; }
+      bool backPlane(void) const { return m_BackPlane; }
       //! \brief 
-      inline void setBackPlane(const bool BackPlane_ = true) { m_BackPlane = BackPlane_; }
+      void setBackPlane(const bool BackPlane_ = true) { m_BackPlane = BackPlane_; }
       //! \brief 
-      inline const QString& textFontName(void) const { return m_TextFontName; }
+      const QString& textFontName(void) const { return m_TextFontName; }
       //! \brief 
-      inline void setTextFontName(const QString& FontName_) { m_TextFontName = FontName_; }
+      void setTextFontName(const QString& FontName_) { m_TextFontName = FontName_; }
       //! \brief 
-      inline unsigned textFontSize(void) const { return m_TextFontSize; }
+      unsigned textFontSize(void) const { return m_TextFontSize; }
       //! \brief 
-      inline void setTextFontSize(const unsigned FontSize_) { m_TextFontSize = FontSize_; }
+      void setTextFontSize(const unsigned FontSize_) { m_TextFontSize = FontSize_; }
       //! \brief 
-      inline QColor textColor(void) const { return m_TextColor; }
+      QColor textColor(void) const { return m_TextColor; }
       //! \brief 
-      inline void setTextColor(const QColor& Color_) { m_TextColor = Color_; }
+      void setTextColor(const QColor& Color_) { m_TextColor = Color_; }
       //! \brief 
-      inline bool isStatic(void) const { return m_IsStatic; }
+      bool isStatic(void) const { return m_IsStatic; }
       //! \brief 
-      inline void setStatic(const bool Static_) { m_IsStatic = Static_; }
+      void setStatic(const bool Static_) { m_IsStatic = Static_; }
       //! \brief returns the description color for tooltip
       virtual QRgb descriptionColor(void) const { return QRgb(0xff000000); }
       //! \brief 
@@ -183,9 +183,9 @@ namespace qnetmap
       //! \brief 
       virtual QRectF nameBoundingBoxF(void);
       //! \brief 
-      inline Qt::PenStyle penStyle(void) const { return m_PenStyle; }
+      Qt::PenStyle penStyle(void) const { return m_PenStyle; }
       //! \brief 
-      inline void setPenStyle(Qt::PenStyle PenStyle_) { m_PenStyle = PenStyle_; }
+      void setPenStyle(Qt::PenStyle PenStyle_) { m_PenStyle = PenStyle_; }
 
       //! \var number PI
       static qreal PI;
@@ -234,16 +234,16 @@ namespace qnetmap
 
    protected:
       //! \brief устанавливает тип фигуры
-      inline void setGeometryType(const QString Type_) { m_GeometryType = Type_; }
+      void setGeometryType(const QString Type_) { m_GeometryType = Type_; }
       //! \brief top left corner of the rectangle surrounding the text
       //! \param QSize& Size_ - size of the rectangle surrounding the text
       virtual QPoint topLeftTextRect(const QSize& Size_);
       //! \brief 
       virtual void drawText(QPainter* Painter_, QString const& Text_);
       //! \brief 
-      inline bool needRecalcBoundingBox(void) const { return m_NeedRecalcBoundingBox; }
+      bool needRecalcBoundingBox(void) const { return m_NeedRecalcBoundingBox; }
       //! \brief 
-      inline void setNeedRecalcBoundingBox(const bool NeedRecalcBoundingBox_ = true) { m_NeedRecalcBoundingBox = NeedRecalcBoundingBox_; }
+      void setNeedRecalcBoundingBox(const bool NeedRecalcBoundingBox_ = true) { m_NeedRecalcBoundingBox = NeedRecalcBoundingBox_; }
 
       //! \var указатель на адаптер карты, на которой рисуется фигура
       TMapAdapter* w_MapAdapter;

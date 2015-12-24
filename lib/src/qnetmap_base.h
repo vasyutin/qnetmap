@@ -63,7 +63,7 @@ namespace qnetmap
       //! \param QRgb* j - указатель на первый пиксел
       //! \param QRgb* n - указатель на второй (средний) пиксел
       //! \param QRgb* k - указатель на третий пиксел
-      static inline void setColorMiddlePixel(const QRgb* j, QRgb* n, const QRgb* k);
+      static void setColorMiddlePixel(const QRgb* j, QRgb* n, const QRgb* k);
       //! \brief blur the picture
       static void blur(QImage& Image_);
       //! \brief

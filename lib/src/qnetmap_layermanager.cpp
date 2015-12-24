@@ -200,7 +200,7 @@ namespace qnetmap
    }
    
    //----------------------------------------------------------------
-   inline void TLayerManager::setMiddle( const QList<QPointF>& Coordinates_, const bool MapUpdate_ /*= true*/ )
+   void TLayerManager::setMiddle( const QList<QPointF>& Coordinates_, const bool MapUpdate_ /*= true*/ )
    {
    qreal X = 0;
    qreal Y = 0;

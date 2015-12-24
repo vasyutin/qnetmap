@@ -69,7 +69,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setSelected( const bool Selected_, const bool SendUpdate_ /*= true*/ )
+   void TGeometry::setSelected( const bool Selected_, const bool SendUpdate_ /*= true*/ )
    {
       if(Selected_ != m_IsSelected) {
          m_IsSelected = Selected_;
@@ -79,7 +79,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setFocused( const bool Focused_, const bool SendUpdate_ /*= true*/ )
+   void TGeometry::setFocused( const bool Focused_, const bool SendUpdate_ /*= true*/ )
    {
       if(Focused_ != m_IsFocused) {
          m_IsFocused = Focused_;
@@ -89,7 +89,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setModified( const bool Modified_ /*= true*/, const bool EmitSignal_ /*= true*/ )
+   void TGeometry::setModified( const bool Modified_ /*= true*/, const bool EmitSignal_ /*= true*/ )
    {
       if(Modified_ != m_IsModified) {
          m_IsModified = Modified_;

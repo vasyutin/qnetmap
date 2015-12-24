@@ -61,11 +61,11 @@ namespace qnetmap
               m_NewGeographicPoint(NewGeographicPoint_) {}
          virtual ~TMapAnchor() {}
 
-         inline bool operator==(const TMapAnchor &Anchor_) const
+         bool operator==(const TMapAnchor &Anchor_) const
          {
          return m_DisplayPoint == Anchor_.m_DisplayPoint;
          }
-         inline bool operator<(const TMapAnchor &Anchor_) const
+         bool operator<(const TMapAnchor &Anchor_) const
          {
          return distance() < Anchor_.distance();
          }
@@ -82,7 +82,7 @@ namespace qnetmap
 
       private:
          //! \brief Расстояние от базовой точки
-         inline qreal distance(void) const
+         qreal distance(void) const
          {
          return sqrt(pow(qreal(m_DisplayPoint.x() - m_BaseDisplayPoint.x()), 2.) +
                      pow(qreal(m_DisplayPoint.y() - m_BaseDisplayPoint.y()), 2.));

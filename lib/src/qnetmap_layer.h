@@ -56,9 +56,9 @@ namespace qnetmap
       virtual ~TLayer();
 
       //! \brief returns the layer's name
-      inline const QString& layername(void) const { return m_Layername; }
+      const QString& layername(void) const { return m_Layername; }
       //! \brief returns the layer's MapAdapter
-      inline const TMapAdapter* mapadapter(void) const { return w_MapAdapter; }
+      const TMapAdapter* mapadapter(void) const { return w_MapAdapter; }
       //! \brief Adds a geometry object to the layer. The layout Takes ownership of the geometry.
       void addGeometry(TGeometry* geometry, bool NoUpdate_ = false);
       //! \brief removes the Geometry object from this Layer
@@ -78,7 +78,7 @@ namespace qnetmap
       //! \brief sets zoom for layer
       void setZoom(const int ZoomLevel_) const;
       //! \brief returns a list of pointers to the figures, located on layer
-      inline TGeometryList const& geometries(void) { return m_Geometries; }
+      TGeometryList const& geometries(void) { return m_Geometries; }
       //! \brief returns a list of pointers to shape within the specified display point
       void geometries(QPoint const& Point_, /*out*/TGeometryList& GeometryList_);
       //! \brief returns a list of pointers to shape within the specified point
@@ -90,7 +90,7 @@ namespace qnetmap
       //! \brief returns the number of figures in the specified point
       unsigned geometriesCount(QPointF const& Point_);
       //! \brief returns the pointer to parent layer manager
-      inline TLayerManager* layerManager(void) { return w_LayerManager; }
+      TLayerManager* layerManager(void) { return w_LayerManager; }
 
    private:
       Q_DISABLE_COPY(TLayer)
@@ -116,8 +116,8 @@ namespace qnetmap
          }
       }
       //! \brief returns the sign of drawing the names of figures
-      inline bool visibilityGeometriesName(void) const { return m_VisibilityGeometriesName; }
-      inline void setLayerManager(TLayerManager* LayerManager) { w_LayerManager = LayerManager; }
+      bool visibilityGeometriesName(void) const { return m_VisibilityGeometriesName; }
+      void setLayerManager(TLayerManager* LayerManager) { w_LayerManager = LayerManager; }
 
       bool      m_IsVisible;
       QString   m_Layername;

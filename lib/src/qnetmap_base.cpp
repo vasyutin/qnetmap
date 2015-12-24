@@ -103,7 +103,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TBase::setColorMiddlePixel(const QRgb* j, QRgb* n, const QRgb* k)
+   void TBase::setColorMiddlePixel(const QRgb* j, QRgb* n, const QRgb* k)
    {
       unsigned Red   = (qRed(*j)   + (qRed(*n)   << 1) + qRed(*k))   >> 2;
       unsigned Green = (qGreen(*j) + (qGreen(*n) << 1) + qGreen(*k)) >> 2;

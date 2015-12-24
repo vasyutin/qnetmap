@@ -26,15 +26,15 @@ namespace qnetmap
       //!        The x component of the returned QPointF is the longitude value,
       //!        the y component the latitude
       //! \return the coordinate of a point
-      inline QPointF coordinate(void) const { return m_Coordinate; }
+      QPointF coordinate(void) const { return m_Coordinate; }
       //! \brief returns the longitude of the point
       //! \return the longitude of the point
-      inline qreal longitude(void) const { return m_Coordinate.x(); }
+      qreal longitude(void) const { return m_Coordinate.x(); }
       //! \brief returns the latitude of the point
       //! \return the latitude of the point
-      inline qreal latitude() const { return m_Coordinate.y(); }
+      qreal latitude() const { return m_Coordinate.y(); }
       //! \brief 
-      inline unsigned countLinkedPoint(void) { return m_LinkedPoints.count(); }
+      unsigned countLinkedPoint(void) { return m_LinkedPoints.count(); }
       //! \brief 
       void addLinkedPoint(TBasePoint* Point_, const bool SetFeedback_ = true, const bool Lock_ = true);
       //! \brief 
@@ -58,7 +58,7 @@ namespace qnetmap
 
    protected:
       //! \brief 
-      inline TLinkedPoints const& linkedPoints(void) const { return m_LinkedPoints; }
+      TLinkedPoints const& linkedPoints(void) const { return m_LinkedPoints; }
 
    private:
       //! \var 

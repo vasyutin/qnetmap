@@ -66,7 +66,7 @@ namespace qnetmap
       /*!
       * @return the current offscreen image
       */
-      inline QPixmap getImage() const;
+      QPixmap getImage() const;
 
       //! returns the layer with the given name
       /*!
@@ -116,10 +116,10 @@ namespace qnetmap
       //void setViewAndZoomIn(const QList<QPointF>& coordinates);
 
       //! zooms in one step
-      inline void zoomIn(const bool ZoomBackground_ = true, const bool MapUpdate_ = true);
+      void zoomIn(const bool ZoomBackground_ = true, const bool MapUpdate_ = true);
 
       //! zooms out one step
-      inline void zoomOut(const bool ZoomBackground_ = true, const bool MapUpdate_ = true);
+      void zoomOut(const bool ZoomBackground_ = true, const bool MapUpdate_ = true);
 
       //! sets the given zoomlevel
       /*!
@@ -174,19 +174,19 @@ namespace qnetmap
       //! \brief
       void drawImage(QPainter* painter);
       //! \brief
-      inline QSize ComposedOffscreenImageSize(void) { return m_OffSize; }
+      QSize ComposedOffscreenImageSize(void) { return m_OffSize; }
       //! \brief
       void addToolTipText(const QString& Text_, const QRgb Color_ = QRgb(0x0));
       //! \brief
-      inline unsigned geometriesUnderMouseCount(void) const { return m_GeometriesUnderMouseCount; }
+      unsigned geometriesUnderMouseCount(void) const { return m_GeometriesUnderMouseCount; }
       //! \brief
       QString toolTipText(void);
       //! \brief
-      inline void clearToolTipText(void) { m_TooltipText.clear(); m_GeometriesUnderMouseCount = 0; }
+      void clearToolTipText(void) { m_TooltipText.clear(); m_GeometriesUnderMouseCount = 0; }
       //! \brief
-      inline QPoint toolTipGlobalPos(void) const { return m_ToolTipGlobalPos; }
+      QPoint toolTipGlobalPos(void) const { return m_ToolTipGlobalPos; }
       //! \brief
-	   inline TGeometry* focused(void) const { return w_FocusedGeometry; }
+	   TGeometry* focused(void) const { return w_FocusedGeometry; }
       //! \brief
 	   void setFocused(TGeometry* Geometry_);
       //! \brief
@@ -194,21 +194,21 @@ namespace qnetmap
       //! \brief
 	   unsigned setSelected(const QRectF& RectF_);
       //! \brief
-	   inline bool removeSelected(TGeometry* Geometry_) { return m_SelectedGeometries.remove(Geometry_); }
+	   bool removeSelected(TGeometry* Geometry_) { return m_SelectedGeometries.remove(Geometry_); }
       //! \brief
       unsigned selectAll(void);
       //! \brief
       void clearSelected(void);
       //! \brief
-	   inline unsigned selectedCount(void) const { return m_SelectedGeometries.size(); }
+	   unsigned selectedCount(void) const { return m_SelectedGeometries.size(); }
       //! \brief
 	   TGeometry* selected(const unsigned Index_);
       //! \brief
-      inline TMapControl* mapControl(void) const { return w_MapControl; }
+      TMapControl* mapControl(void) const { return w_MapControl; }
       //! \brief
-      inline unsigned tooltipLinesMaxCount(void) const { return m_TooltipLinesMaxCount; }
+      unsigned tooltipLinesMaxCount(void) const { return m_TooltipLinesMaxCount; }
       //! \brief
-      inline void setTooltipLinesMaxCount(const unsigned Count_) { m_TooltipLinesMaxCount = Count_; }
+      void setTooltipLinesMaxCount(const unsigned Count_) { m_TooltipLinesMaxCount = Count_; }
       //! \brief
       QPixmap getMapFragment(const QPointF& MiddlePoint_, const QSize& Size_, const int Zoom_);
 
@@ -221,9 +221,9 @@ namespace qnetmap
       */
       TGeometry* mouseEvent(QMouseEvent* evnt);
       //! \brief
-      inline bool mouseMoved(void) const { return m_MouseMoved; }
+      bool mouseMoved(void) const { return m_MouseMoved; }
       //! \brief
-      inline bool mouseButtonPressed(void) const { return m_MouseButtonPressed; }
+      bool mouseButtonPressed(void) const { return m_MouseButtonPressed; }
 		//! \brief 
 		TSetGeometries& selectedGeometries(void) { return m_SelectedGeometries; }
 		//! \brief 
@@ -239,13 +239,13 @@ namespace qnetmap
       */
       void newOffscreenImage(bool ClearImage_=true, bool ShowZoomImage_=true);
       //! \brief
-      inline bool checkOffscreen() const;
+      bool checkOffscreen() const;
       //! \brief
-      inline bool containsAll(const QList<QPointF>& coordinates) const;
+      bool containsAll(const QList<QPointF>& coordinates) const;
       //! \brief
-      inline void moveWidgets();
+      void moveWidgets();
       //! \brief
-      inline void setMiddle(const QList<QPointF>& Coordinates_, const bool MapUpdate_ = true);
+      void setMiddle(const QList<QPointF>& Coordinates_, const bool MapUpdate_ = true);
       //! \brief
       void zoom(const int Type_, const bool ZoomBackground_ = true, const bool MapUpdate_ = true);
       //! \brief
