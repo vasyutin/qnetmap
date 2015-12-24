@@ -40,7 +40,7 @@ namespace qnetmap
 
    //! \class TImageManager
    //! \brief Класс, управляющий получением тайлов
-   class QNETMAP_EXPORT TImageManager : public TBase
+   class QNETMAP_EXPORT TImageManager: public TBase
    {
    Q_OBJECT
 

@@ -33,8 +33,9 @@ namespace qnetmap
    TImageManager* TImageManager::w_Instance = NULL;
 
    //-----------------------------------------------------------------------------------
-   TImageManager::TImageManager(TParent* Parent_)
-      : TParent(Parent_), m_EmptyPixmap(QPixmap(1,1)), m_UniqueNumber(0), w_MapNetwork(NULL), m_LoadTiles(true)
+   TImageManager::TImageManager(TParent* Parent_):
+      TParent(Parent_),
+      m_EmptyPixmap(QPixmap(1,1)), w_MapNetwork(NULL), m_UniqueNumber(0), m_LoadTiles(true)
    {
    if(!w_Instance || !w_Instance->mapNetwork()) w_MapNetwork = new TMapNetwork(this);
    m_EmptyPixmap.fill(Qt::transparent);

@@ -388,7 +388,7 @@ namespace qnetmap
       //! \brief
       inline bool modified(void) const { return m_Modified; }
       //! \brief
-      inline void setModified(bool Modified_ = true);
+      void setModified(bool Modified_ = true);
       //! \brief 
       inline bool editMode(void) const { return m_EditMode; }
       //! \brief 

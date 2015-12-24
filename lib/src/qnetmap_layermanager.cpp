@@ -311,6 +311,7 @@ namespace qnetmap
    //----------------------------------------------------------------
    void TLayerManager::layerGeometryClicked(TGeometry* Geometry_, QPointF Point_, QMouseEvent* Event_)
    {
+      Q_UNUSED(Point_)
       bool ControlKeyPressed = Event_->button() == Qt::LeftButton && Event_->modifiers() == Qt::ControlModifier;
       //
       if(((Event_->button() == Qt::LeftButton  && Event_->type() == QEvent::MouseButtonPress) || 
