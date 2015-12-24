@@ -1,10 +1,9 @@
 TEMPLATE = lib
 CONFIG += dll
 QT += core gui network xml
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = qnetmap
-
 DEFINES += QNETMAP_LIB
-
 
 #DESTDIR = ../../../bin
 

@@ -54,10 +54,10 @@ namespace qnetmap
         w_PointMarkerImage(NULL),
         m_SelectionIsShown(Area_ == NULL || !Area_->toShow() || Area_->points().empty()),
         m_SelectArea(false),
-        m_Modified(false),
-        m_EditMode(false),
         w_GeometryClicked(NULL),
         w_OldGeometryClicked(NULL),
+        m_Modified(false),
+        m_EditMode(false),
         m_MouseMovedBetweenPressRelease(false),
         m_SelectionInViewMode(true)
    {

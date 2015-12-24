@@ -235,14 +235,12 @@ namespace qnetmap
       //! \brief масштаб по оси у на указанном уровне
       virtual qreal pixelYScale(int Zoom_) const;
       //! \brief возвращает тайл по координатам х, у на масштабе z
-      virtual QPixmap tile(int X_, int Y_, int Z_) const 
-      {
-      Q_UNUSED(X_)
-      Q_UNUSED(Y_)
-      Q_UNUSED(Z_)
-
-      return QPixmap(); 
-      }
+      virtual QPixmap tile(int X_, int Y_, int Z_) const {
+        Q_UNUSED(X_)
+        Q_UNUSED(Y_)
+        Q_UNUSED(Z_)
+        return QPixmap();
+        }
       //! \brief установка параметров адаптера карты
       virtual void setParameters(TMapAdapterParameters* Parameters_);
       //! \brief тип проекции карты

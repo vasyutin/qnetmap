@@ -314,8 +314,8 @@ namespace qnetmap
       Q_UNUSED(Point_)
       bool ControlKeyPressed = Event_->button() == Qt::LeftButton && Event_->modifiers() == Qt::ControlModifier;
       //
-      if(((Event_->button() == Qt::LeftButton  && Event_->type() == QEvent::MouseButtonPress) || 
-          (Event_->button() == Qt::RightButton && Event_->type() == QEvent::MouseButtonRelease) && !mouseMoved())) {
+      if(((Event_->button() == Qt::LeftButton && Event_->type() == QEvent::MouseButtonPress) ||
+         (Event_->button() == Qt::RightButton && Event_->type() == QEvent::MouseButtonRelease)) && !mouseMoved()) {
          bool EditMode = mapControl()->editMode();
          // set old focused object to unfocused
          if((EditMode || !Geometry_->isStatic())) {
