@@ -21,8 +21,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
@@ -111,8 +111,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
@@ -204,8 +204,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
@@ -294,8 +294,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory="$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(OBJ_DIR)/$(ProjectName)/$(PlatformName)/$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"

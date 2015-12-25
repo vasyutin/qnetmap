@@ -22,7 +22,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj"
+			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			CharacterSet="1"
@@ -95,8 +95,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj"
+			OutputDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			CharacterSet="1"
@@ -171,7 +171,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj"
+			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			CharacterSet="1"
@@ -245,7 +245,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)"
-			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj"
+			IntermediateDirectory="$(SolutionDir)/../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			CharacterSet="1"
