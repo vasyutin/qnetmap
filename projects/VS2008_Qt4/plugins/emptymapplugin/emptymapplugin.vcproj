@@ -53,7 +53,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
 				RuntimeTypeInfo="true"
@@ -78,7 +78,7 @@
 				AdditionalDependencies="QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtXmld4.lib qnetmap.lib"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
 				SubSystem="2"
@@ -144,7 +144,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -171,7 +171,7 @@
 				AdditionalDependencies="QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtXmld4.lib qnetmap.lib"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
 				SubSystem="2"
@@ -236,7 +236,7 @@
 				Optimization="3"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -262,7 +262,7 @@
 				AdditionalDependencies="QtGui4.lib QtCore4.lib QtNetwork4.lib QtXml4.lib qnetmap.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
 				SubSystem="2"
@@ -327,7 +327,7 @@
 				Optimization="3"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -356,7 +356,7 @@
 				AdditionalDependencies="QtGui4.lib QtCore4.lib QtNetwork4.lib QtXml4.lib qnetmap.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateManifest="false"
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
@@ -415,9 +415,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -426,9 +426,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -437,9 +437,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -448,9 +448,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -461,7 +461,7 @@
 			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}"
 			>
 			<File
-				RelativePath=".\moc\moc_emptymapplugin.cpp"
+				RelativePath="..\..\..\..\build\moc\qnetmap_empty_map\moc_emptymapplugin.cpp"
 				>
 			</File>
 		</Filter>

@@ -79,7 +79,7 @@
 				AdditionalDependencies="QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtXmld4.lib qnetmap.lib"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
 				SubSystem="2"
@@ -172,7 +172,7 @@
 				AdditionalDependencies="QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtXmld4.lib qnetmap.lib"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
 				SubSystem="2"
@@ -264,7 +264,7 @@
 				OutputFile="$(OutDir)\$(ProjectName).dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
 				SubSystem="2"
@@ -359,7 +359,7 @@
 				OutputFile="$(OutDir)\$(ProjectName).dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(BIN_DIR)/qnetmap/$(PlatformName)/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
 				SubSystem="2"
@@ -417,9 +417,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -428,9 +428,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -439,9 +439,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -450,9 +450,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -463,7 +463,7 @@
 			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}"
 			>
 			<File
-				RelativePath=".\moc\moc_universaltilemapplugin.cpp"
+				RelativePath="..\..\..\..\build\moc\qnetmap_universaltile_map\moc_universaltilemapplugin.cpp"
 				>
 			</File>
 		</Filter>
@@ -478,9 +478,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Updating services XML..."
-						CommandLine="copy /Y $(InputPath) $(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml&#x0D;&#x0A;"
-						Outputs="$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -488,9 +489,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Updating services XML..."
-						CommandLine="copy /Y $(InputPath) $(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml&#x0D;&#x0A;"
-						Outputs="$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -498,9 +500,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Updating services XML..."
-						CommandLine="copy /Y $(InputPath) $(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml&#x0D;&#x0A;"
-						Outputs="$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -508,9 +511,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Updating services XML..."
-						CommandLine="copy /Y $(InputPath) $(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml&#x0D;&#x0A;"
-						Outputs="$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
+						Description="Moc&apos;ing $(InputFileName)..."
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>

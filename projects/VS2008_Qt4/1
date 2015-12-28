@@ -8,3 +8,10 @@ $(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)/obj/$(ProjectName
 "$(QTDIR)/lib";"$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)";"$(QTDIR)/plugins/imageformats"
 "$(QTDIR64)/lib";"$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)";"$(QTDIR)/plugins/imageformats"
 
+
+moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp
+Moc'ing $(InputFileName)...
+$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp
+$(QTDIR)\bin\moc.exe
+
+

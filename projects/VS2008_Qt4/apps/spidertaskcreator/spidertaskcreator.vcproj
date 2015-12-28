@@ -430,9 +430,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -441,9 +441,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -452,9 +452,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -463,9 +463,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -478,9 +478,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -489,9 +489,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -500,9 +500,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -511,9 +511,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -526,9 +526,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -537,9 +537,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -548,9 +548,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -559,9 +559,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -574,9 +574,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -585,9 +585,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -596,9 +596,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -607,9 +607,9 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(ProjectDir)moc\moc_$(InputName).cpp&#x0D;&#x0A;"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(ProjectDir)moc\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
