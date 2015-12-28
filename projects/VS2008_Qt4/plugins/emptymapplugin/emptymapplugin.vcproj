@@ -143,7 +143,7 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				RuntimeLibrary="3"
@@ -326,7 +326,7 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
@@ -415,7 +415,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -426,7 +426,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -437,7 +437,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -448,7 +448,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>

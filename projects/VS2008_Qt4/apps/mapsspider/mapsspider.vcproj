@@ -55,7 +55,7 @@
 				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189 /MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB;QNETMAP_LIB"
+				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
 				AssemblerListingLocation=""
@@ -146,7 +146,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB;QNETMAP_LIB"
+				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
 				AssemblerListingLocation=""
@@ -237,7 +237,7 @@
 				Optimization="3"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="true"
 				AssemblerListingLocation=""
@@ -332,7 +332,7 @@
 				Optimization="3"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="true"
 				AssemblerListingLocation=""
@@ -424,7 +424,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -435,7 +435,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -446,7 +446,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -457,7 +457,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -472,7 +472,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -483,7 +483,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -494,7 +494,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -505,7 +505,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>

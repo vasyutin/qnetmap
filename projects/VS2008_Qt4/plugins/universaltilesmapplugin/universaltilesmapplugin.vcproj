@@ -53,7 +53,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -145,7 +145,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -237,7 +237,7 @@
 				Optimization="3"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -329,7 +329,7 @@
 				Optimization="3"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_PLUGIN;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -417,7 +417,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -428,7 +428,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -439,7 +439,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -450,7 +450,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -I $(ProjectDir)\..\..\..\..\lib\src -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -478,10 +478,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						Description="Updating services XML..."
+						CommandLine="xcopy /Y /D $(InputPath) $(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName) &gt; nul"
+						AdditionalDependencies=""
+						Outputs="$(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -489,10 +489,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
-						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
-						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						Description="Updating services XML..."
+						CommandLine="xcopy /Y /D $(InputPath) $(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName) &gt; nul"
+						AdditionalDependencies=""
+						Outputs="$(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -500,10 +500,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
-						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
-						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						Description="Updating services XML..."
+						CommandLine="xcopy /Y /D $(InputPath) $(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName) &gt; nul"
+						AdditionalDependencies=""
+						Outputs="$(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -511,10 +511,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
-						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
-						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						Description="Updating services XML..."
+						CommandLine="xcopy /Y /D $(InputPath) $(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName) &gt; nul"
+						AdditionalDependencies=""
+						Outputs="$(SolutionDir)..\..\build\$(PlatformName)\$(ConfigurationName)\qnetmap.xml"
 					/>
 				</FileConfiguration>
 			</File>

@@ -12,4 +12,4 @@ The development of the library was supported by the "Sintels" LLC (ЗАО "Си�
 http://sintels.ru) and OJSC "T8" (ОАО "Т8" - https://t8.ru). 
 
 Written by Sergey Shumeyko (sergey.shumeyko@gmail.com) and Sergey Vasyutin 
-(sv.public@yandex.ru).
+(svpub@outlook.com).
