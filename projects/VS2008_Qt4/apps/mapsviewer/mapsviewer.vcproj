@@ -55,7 +55,7 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
@@ -76,7 +76,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="qtmaind.lib qnetmap.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib qjpegd4.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
@@ -145,8 +145,8 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				AdditionalIncludeDirectories="&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
+				PreprocessorDefinitions="QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -168,7 +168,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="qtmaind.lib qnetmap.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib qjpegd4.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(QTDIR)/plugins.$(PlatformName)/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR64)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
@@ -240,7 +240,7 @@
 				FavorSizeOrSpeed="1"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				PreprocessorDefinitions="_WINDOWS;QT_NO_DEBUG;NDEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="true"
 				RuntimeTypeInfo="true"
@@ -263,7 +263,7 @@
 				IgnoreImportLibrary="true"
 				AdditionalDependencies="qtmain.lib qnetmap.lib QtSvg4.lib QtXml4.lib QtGui4.lib QtNetwork4.lib QtCore4.lib qjpeg4.lib"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
@@ -332,8 +332,8 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_WINDOWS;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QNETMAP_LIB"
+				AdditionalIncludeDirectories="&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
+				PreprocessorDefinitions="_WINDOWS;QT_NO_DEBUG;NDEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				GeneratePreprocessedFile="0"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -359,7 +359,7 @@
 				IgnoreImportLibrary="true"
 				AdditionalDependencies="qtmain.lib qnetmap.lib QtSvg4.lib QtXml4.lib QtGui4.lib QtNetwork4.lib QtCore4.lib qjpeg4.lib"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(QTDIR)/plugins.$(PlatformName)/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR64)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
@@ -430,7 +430,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -441,7 +441,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -452,7 +452,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -463,7 +463,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -478,7 +478,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -489,7 +489,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -500,7 +500,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -511,7 +511,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -526,7 +526,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -537,7 +537,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -548,7 +548,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -559,7 +559,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -574,7 +574,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -585,7 +585,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -596,7 +596,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -607,7 +607,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing $(InputFileName)..."
-						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
+						CommandLine="moc.exe $(InputPath) -o $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(QTDIR64)\bin\moc.exe"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
 					/>
@@ -626,19 +626,19 @@
 			Name="moc"
 			>
 			<File
-				RelativePath=".\moc\moc_configuration.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsviewer\moc_configuration.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\moc\moc_main.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsviewer\moc_main.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\moc\moc_map.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsviewer\moc_map.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\moc\moc_mapsviewer_translator.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsviewer\moc_mapsviewer_translator.cpp"
 				>
 			</File>
 		</Filter>
