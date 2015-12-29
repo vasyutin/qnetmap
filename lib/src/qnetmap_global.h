@@ -94,7 +94,7 @@ namespace qnetmap {
 #define SELECTION_PADDING  2
 
 #define QNETMAP_VERSION_MAJOR  2
-#define QNETMAP_VERSION_MINOR  0
+#define QNETMAP_VERSION_MINOR  1
 #define QNETMAP_VERSION        0x020000
 
 

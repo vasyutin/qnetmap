@@ -30,7 +30,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine=""
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -49,7 +50,7 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
 				PreprocessorDefinitions="NDEBUG;WIN32;QT_NO_DEBUG;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -104,7 +105,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine=""
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -124,7 +126,7 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;"
 				PreprocessorDefinitions="NDEBUG;WIN32;QT_NO_DEBUG;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -179,7 +181,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine=""
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -197,7 +200,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
 				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="3"
@@ -253,7 +256,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine=""
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -272,7 +276,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;"
 				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="3"
@@ -499,6 +503,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\lib\src\qnetmap_utmpoint.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\lib\src\qnetmap_version.cpp"
 				>
 			</File>
 			<File

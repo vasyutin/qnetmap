@@ -34,6 +34,7 @@
 #include "../images/view_and_print_map16.hex"
 
 #include "qnetmap_pngimage.h"
+#include <qnetmap_version.h>
 
 #include "gpx.h"
 
@@ -572,11 +573,8 @@ QString TMap::programTitle(void)
 // -----------------------------------------------------------------------
 QString TMap::programVersion(void)
 {
-const int Version = 
-	#include <qnetmap_revision.h>
-	;
-return MapsViewerTranslator::tr("version") + QString(" %1.%2.%3").arg(QNETMAP_VERSION_MAJOR)
-	.arg(QNETMAP_VERSION_MINOR).arg(Version);
+return MapsViewerTranslator::tr("version") + ' ' + qnetmap::VersionString() + " (" +
+	qnetmap::VersionHash() + ')';
 }
 
 // -----------------------------------------------------------------------
