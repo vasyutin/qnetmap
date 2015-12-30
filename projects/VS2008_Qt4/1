@@ -15,3 +15,11 @@ $(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp
 $(QTDIR)\bin\moc.exe
 
 
+
+
+cd $(SolutionDir)..\.. & call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h
+Updating revision file...
+
+
+"$(QTDIR)\bin\rcc.exe" -name "$(InputName)" -no-compress "$(InputPath)" -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp
+Rcc'ing $(InputFileName)...

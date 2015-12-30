@@ -36,7 +36,7 @@
 namespace qnetmap
 {
    //! \class The base class for all library
-   class TBase: public QObject
+   class QNETMAP_EXPORT TBase: public QObject
    {
       Q_OBJECT
 

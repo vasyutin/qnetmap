@@ -1,3 +1,4 @@
+@echo off
 rem This script gets the the commit count across all branches in the given repo.
 rem Usage: git-revision <revision file>
 rem The script runs from the repo's root
@@ -5,8 +6,18 @@ rem The script runs from the repo's root
 set REVISION_FILE=%1
 set REVISION_HASH_FILE=%REVISION_FILE%ash
 
+set LOCK_FILE=%TEMP%\qnetmap_version.lock
+
+:CHECK_LOCK
+if EXIST %LOCK_FILE% (
+   ping -n 2 127.0.0.1 > nul
+   goto CHECK_LOCK
+)
+
+rem Create lock file
+echo Lock > %LOCK_FILE%
+
 set CURRENT_VERSION_FILE=%TEMP%\qnetmap_version.%RANDOM%
-set TEMP_HASH_FILE=%TEMP%\qnetmap_hash.%RANDOM%
 
 git rev-list --all --count > %CURRENT_VERSION_FILE% 2> nul
 set CURRENT_VERSION_TEXT=###
@@ -42,6 +53,6 @@ if NOT EXIST %REVISION_FILE% (
 )
 
 :END
-
+del %LOCK_FILE% > nul 2> nul
 
 

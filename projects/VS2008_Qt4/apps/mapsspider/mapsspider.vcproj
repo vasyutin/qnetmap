@@ -30,6 +30,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -54,7 +56,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189 /MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -78,7 +80,7 @@
 				IgnoreImportLibrary="true"
 				AdditionalDependencies="qtmaind.lib qnetmap.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib qjpegd4.lib"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -119,6 +121,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -145,7 +149,7 @@
 				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189 /MP"
 				Optimization="0"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;;&quot;$(QTDIR64)\include\QtSvg&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="NOTRAYICON;_WINDOWS;_DEBUG;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;QT_NETWORK_LIB"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -169,7 +173,7 @@
 				IgnoreImportLibrary="true"
 				AdditionalDependencies="qtmaind.lib qnetmap.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib qjpegd4.lib"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(QTDIR)/plugins.$(PlatformName)/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR64)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -211,6 +215,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -236,7 +242,7 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="true"
@@ -262,7 +268,7 @@
 				AdditionalDependencies="qtmain.lib qnetmap.lib QtSvg4.lib QtXml4.lib QtGui4.lib QtNetwork4.lib QtCore4.lib qjpeg4.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
@@ -305,6 +311,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Updating revision file..."
+				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -331,7 +339,7 @@
 				AdditionalOptions="/MP"
 				Optimization="3"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtSvg&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)src&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;;&quot;$(QTDIR64)\include\QtSvg&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
 				PreprocessorDefinitions="NOTRAYICON;QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_SVG_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="true"
@@ -357,7 +365,7 @@
 				AdditionalDependencies="qtmain.lib qnetmap.lib QtSvg4.lib QtXml4.lib QtGui4.lib QtNetwork4.lib QtCore4.lib qjpeg4.lib"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(QTDIR)/lib.$(PlatformName)&quot;;&quot;$(QTDIR)/plugins.$(PlatformName)/imageformats&quot;;&quot;$(BIN_DIR)\qnetmap\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;$(QTDIR64)/lib&quot;;&quot;$(SolutionDir)../../build/$(PlatformName)/$(ConfigurationName)&quot;;&quot;$(QTDIR64)/plugins/imageformats&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="false"
 				ProgramDatabaseFile=""
@@ -530,10 +538,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Rcc&apos;ing $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(ProjectDir)\moc\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						Description="Making resources for $(InputFileName)..."
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
-						Outputs="$(ProjectDir)\moc\qrc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -541,10 +549,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Rcc&apos;ing $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(ProjectDir)\moc\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						Description="Making resources for $(InputFileName)..."
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
-						Outputs="$(ProjectDir)\moc\qrc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -552,10 +560,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Rcc&apos;ing $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(ProjectDir)\moc\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						Description="Making resources for $(InputFileName)..."
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
-						Outputs="$(ProjectDir)\moc\qrc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -563,10 +571,10 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						Description="Rcc&apos;ing $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(ProjectDir)\moc\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						Description="Making resources for $(InputFileName)..."
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
-						Outputs="$(ProjectDir)\moc\qrc_$(InputName).cpp"
+						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
 				</FileConfiguration>
 			</File>
@@ -575,15 +583,15 @@
 			Name="moc"
 			>
 			<File
-				RelativePath=".\moc\moc_mapsspider_translator.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsspider\moc_mapsspider_translator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\moc\moc_mapsspiderdialog.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsspider\moc_mapsspiderdialog.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\moc\qrc_systray.cpp"
+				RelativePath="..\..\..\..\build\moc\mapsspider\qrc_systray.cpp"
 				>
 			</File>
 		</Filter>
