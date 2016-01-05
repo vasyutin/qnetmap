@@ -1,9 +1,22 @@
 TEMPLATE = lib
 CONFIG += dll
-QT += core gui network xml
+QT += core gui network xml printsupport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = qnetmap
 DEFINES += QNETMAP_LIB
+
+CONFIG(release, debug|release) {
+    DESTDIR = $${_PRO_FILE_PWD_}/../../../build/release
+    OBJECTS_DIR = $${OUT_PWD}/release/obj
+    MOC_DIR = $${OUT_PWD}/release/moc
+    UI_DIR = $${OUT_PWD}/release/ui
+    }
+CONFIG(debug, debug|release) {
+    DESTDIR = $${_PRO_FILE_PWD_}/../../../build/debug
+    OBJECTS_DIR = $${OUT_PWD}/debug/obj
+    MOC_DIR = $${OUT_PWD}/debug/moc
+    UI_DIR = $${OUT_PWD}/debug/ui
+    }
 
 #DESTDIR = ../../../bin
 
@@ -25,27 +38,9 @@ DEFINES += QNETMAP_LIB
 
 
 
-
-CONFIG(release, debug|release) {
-    DESTDIR = $${OUT_PWD}/../bin/release
-    OBJECTS_DIR = $${OUT_PWD}/release/obj
-    MOC_DIR = $${OUT_PWD}/release/moc
-    UI_DIR = $${OUT_PWD}/release/ui
-    }
-
-CONFIG(debug, debug|release) {
-    DESTDIR = $${OUT_PWD}/../bin/debug
-    OBJECTS_DIR = $${OUT_PWD}/debug/obj
-    MOC_DIR = $${OUT_PWD}/debug/moc
-    UI_DIR = $${OUT_PWD}/debug/ui
-    }
-
-
-
 #DEFINES += QT_NETWORK_LIB QNETMAP_LIB QT_NO_OPENSSL
 
-INCLUDEPATH += ../../../lib/src\
-    ../../../lib
+INCLUDEPATH += ../../../lib/src ../../../lib ../../../version
 
 #LIBS += -L"."
 #DEPENDPATH += .

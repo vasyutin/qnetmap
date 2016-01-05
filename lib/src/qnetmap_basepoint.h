@@ -14,7 +14,7 @@ namespace qnetmap
 
    typedef QSet<TBasePoint*> TLinkedPoints;
 
-   class TBasePoint
+   class QNETMAP_EXPORT TBasePoint
    {
    public:
       explicit TBasePoint(TGeometry* ParentGeometry_ = NULL, QPointF Coordinate_ = QPointF());

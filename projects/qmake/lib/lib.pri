@@ -47,6 +47,7 @@ HEADERS += ../../../lib/src/qnetmap_arrowpoint.h \
 SOURCES += ../../../lib/src/qnetmap_arrowpoint.cpp \
     ../../../lib/src/qnetmap_arbitraryfigure.cpp\
     ../../../lib/src/qnetmap_base.cpp \
+    ../../../lib/src/qnetmap_basepoint.cpp \
     ../../../lib/src/qnetmap_checkproxy.cpp \
     ../../../lib/src/qnetmap_circlepoint.cpp \
     ../../../lib/src/qnetmap_coordinatesdialog.cpp \
@@ -59,6 +60,7 @@ SOURCES += ../../../lib/src/qnetmap_arrowpoint.cpp \
     ../../../lib/src/qnetmap_geometryobject.cpp \
     ../../../lib/src/qnetmap_global.cpp \
     ../../../lib/src/qnetmap_gps_position.cpp \
+    ../../../lib/src/qnetmap_httpparameters.cpp \
     ../../../lib/src/qnetmap_imagemanager.cpp \
     ../../../lib/src/qnetmap_layer.cpp \
     ../../../lib/src/qnetmap_layermanager.cpp \
@@ -83,4 +85,5 @@ SOURCES += ../../../lib/src/qnetmap_arrowpoint.cpp \
     ../../../lib/src/qnetmap_universaltilemapadapter.cpp \
     ../../../lib/src/qnetmap_universaltilemapxmlhandler.cpp \
     ../../../lib/src/qnetmap_utmpoint.cpp \
-    ../../../lib/src/qnetmap_widget.cpp
+    ../../../lib/src/qnetmap_widget.cpp \
+    ../../../lib/src/qnetmap_version.cpp

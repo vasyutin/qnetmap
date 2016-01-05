@@ -602,9 +602,9 @@ public:
 	TAboutDialog(void): QDialog(NULL, Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint) {
 		setWindowTitle(MapsViewerTranslator::tr("About"));
 		//
-		QPalette palette(palette());
-		palette.setColor(backgroundRole(), Qt::white);
-		setPalette(palette);
+        QPalette Palette(palette());
+        Palette.setColor(backgroundRole(), Qt::white);
+        setPalette(Palette);
 		setAutoFillBackground(true);
 		//
 		QVBoxLayout *Layout = new QVBoxLayout(this);
