@@ -16,27 +16,20 @@ CONFIG(debug, debug|release) {
 
 LIBS += -L"$${DESTDIR}" -lqnetmap
 
-#CONFIG(release, debug|release) {
-#   DESTDIR = $${OUT_PWD}/../bin/Release
-#   OBJECTS_DIR = $${OUT_PWD}/tmp/Release/obj
-#   MOC_DIR = $${OUT_PWD}/tmp/Release/moc
-#   LIBS += -L"$${OUT_PWD}/../../lib/bin/Release" -lqnetmap
-#   }
-#CONFIG(debug, debug|release) {
-#   DESTDIR = $${OUT_PWD}/../bin/Debug
-#   OBJECTS_DIR = $${OUT_PWD}/tmp/Debug/obj
-#   MOC_DIR = $${OUT_PWD}/tmp/Debug/moc
-#   LIBS += -L"$${OUT_PWD}/../../lib/bin/Debug" -lqnetmap
-#   }
-
 QT += core gui network xml
 INCLUDEPATH += ../../../../lib/src ../../../../lib ../../../../plugins/universaltilemap
 
-#DEFINES += _WINDOWS QT_LARGEFILE_SUPPORT QT_DLL QNETMAP_LIB
-#INCLUDEPATH += ../../lib/src
-#DEPENDPATH += .
-#UI_DIR += ./uic
-#RCC_DIR += ./rcc
 include(universaltilesmap.pri)
 
-
+# Copy qnetmap.xml to the binaries folder.
+QNETMAPXML = ../../../../plugins/universaltilemap/xml/qnetmap.xml
+qnetmapxmlcopy.name = Copy qnetmap.xml
+qnetmapxmlcopy.input = QNETMAPXML
+qnetmapxmlcopy.depends = $$QNETMAPXML
+qnetmapxmlcopy.output = $${DESTDIR}/qnetmap.xml
+# Commands
+win32: qnetmapxmlcopy.commands = copy /Y ..\..\..\..\plugins\universaltilemap\xml\qnetmap.xml $$quote($$replace(DESTDIR, /, \ )) >nul
+!win32: qnetmapxmlcopy.commands = cp -f ../../../../plugins/universaltilemap/xml/qnetmap.xml $$quote(DESTDIR)
+#
+qnetmapxmlcopy.CONFIG += no_link target_predeps
+QMAKE_EXTRA_COMPILERS += qnetmapxmlcopy
