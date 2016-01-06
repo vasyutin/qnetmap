@@ -1,4 +1,4 @@
-@echo off
+rem @echo off
 rem This script gets the the commit count across all branches in the given repo.
 rem Usage: git-revision <revision file>
 rem The script runs from the repo's root
@@ -16,6 +16,11 @@ if EXIST %LOCK_FILE% (
 
 rem Create lock file
 echo Lock > %LOCK_FILE%
+
+rem Create ./version folder is absent
+if NOT EXIST version (
+   mkdir version
+)
 
 set CURRENT_VERSION_FILE=%TEMP%\qnetmap_version.%RANDOM%
 

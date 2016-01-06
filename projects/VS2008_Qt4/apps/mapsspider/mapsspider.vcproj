@@ -30,8 +30,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -121,8 +121,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -215,8 +215,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -311,8 +311,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -539,7 +539,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Making resources for $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
@@ -550,7 +550,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Making resources for $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
@@ -561,7 +561,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Making resources for $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>
@@ -572,7 +572,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Making resources for $(InputFileName)..."
-						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
+						CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp&#x0D;&#x0A;"
 						AdditionalDependencies="$(Projectdir)..\..\..\..\mapsspider\images\globe32.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_1.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_10.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_2.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_3.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_4.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_5.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_6.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_7.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_8.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_9.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_accept.png;$(Projectdir)..\..\..\..\mapsspider\images\globe32_error.png"
 						Outputs="$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_$(InputName).cpp"
 					/>

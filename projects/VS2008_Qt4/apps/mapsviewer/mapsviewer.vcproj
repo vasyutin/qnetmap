@@ -30,8 +30,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -121,8 +121,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -217,8 +217,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -312,8 +312,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description="Updating revision file..."
-				CommandLine="cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h"
+				Description=""
+				CommandLine=""
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
