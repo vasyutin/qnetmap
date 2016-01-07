@@ -44,6 +44,7 @@ HEADERS += ../../../lib/src/qnetmap_arrowpoint.h \
     ../../../lib/src/qnetmap_visual_elments.h \
     ../../../lib/src/qnetmap_widget.h \
     ../../../lib/src/qnetmap_xmltagnames.h
+
 SOURCES += ../../../lib/src/qnetmap_arrowpoint.cpp \
     ../../../lib/src/qnetmap_arbitraryfigure.cpp\
     ../../../lib/src/qnetmap_base.cpp \
