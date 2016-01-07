@@ -40,10 +40,17 @@ CONFIG(debug, debug|release) {
 
 #DEFINES += QT_NETWORK_LIB QNETMAP_LIB QT_NO_OPENSSL
 
-INCLUDEPATH += ../../../lib/src ../../../lib ../../../version
+INCLUDEPATH += $${_PRO_FILE_PWD_}/../../../lib/src $${_PRO_FILE_PWD_}/../../../lib $${_PRO_FILE_PWD_}/../../../version
 
 #LIBS += -L"."
 #DEPENDPATH += .
 #QMAKE_POST_LINK = cp -f $${_PRO_FILE_PWD_}/../qnetmap.xml $${PLUGINSDIR}
 
 include(lib.pri)
+
+# Create revision file if not exists
+versionfile.target = $${_PRO_FILE_PWD_}/../../../version/qnetmap_revision.h
+win32: versionfile.commands = cd $$quote($$replace(_PRO_FILE_PWD_, /, \ )\..\..\..) & call .\scripts\revision\git-revision.cmd .\version\qnetmap_revision.h
+!win32: versionfile.commands = cd ../../.. & ./scripts/revision/git-revision ./version/qnetmap_revision.h
+QMAKE_EXTRA_TARGETS += versionfile
+PRE_TARGETDEPS += $${_PRO_FILE_PWD_}/../../../version/qnetmap_revision.h

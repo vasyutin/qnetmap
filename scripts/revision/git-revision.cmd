@@ -17,7 +17,7 @@ if EXIST %LOCK_FILE% (
 rem Create lock file
 echo Lock > %LOCK_FILE%
 
-rem Create ./version folder is absent
+rem Create ./version folder if absent
 if NOT EXIST version (
    mkdir version
 )
