@@ -51,6 +51,6 @@ include(lib.pri)
 # Create revision file if not exists
 versionfile.target = $${_PRO_FILE_PWD_}/../../../version/qnetmap_revision.h
 win32: versionfile.commands = cd $$quote($$replace(_PRO_FILE_PWD_, /, \ )\..\..\..) & call .\scripts\revision\git-revision.cmd .\version\qnetmap_revision.h
-!win32: versionfile.commands = cd ../../.. & ./scripts/revision/git-revision ./version/qnetmap_revision.h
+!win32: versionfile.commands = cd $${_PRO_FILE_PWD_}/../../.. && ./scripts/revision/git-revision.sh ./version/qnetmap_revision.h
 QMAKE_EXTRA_TARGETS += versionfile
 PRE_TARGETDEPS += $${_PRO_FILE_PWD_}/../../../version/qnetmap_revision.h

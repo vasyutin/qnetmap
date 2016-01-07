@@ -5,6 +5,9 @@ The QNetMap can be build in different ways depending of what build tools you are
 QMake build project was tested Qt 
 
 
+By now all the executables and DLL are placed in the same folder.
+Not to spoil the system.
+
 2. Building with Qt Creator
 
 

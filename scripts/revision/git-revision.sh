@@ -1,52 +1,35 @@
 # /bin/sh
-#
-rem This script gets the the commit count across all branches in the given repo.
-rem Usage: git-revision <revision file>
-rem The script runs from the repo's root
+# This script gets the the commit count across all branches in the given repo.
+# Usage: git-revision.sh <revision file>
+# The script runs from the repo's root
 
 REVISION_FILE=$1
 REVISION_HASH_FILE=${REVISION_FILE}ash
 
-rem Create ./version folder if absent
-if NOT EXIST version (
-   mkdir version
-)
+# Create ./version folder if absent
+if [ ! -d version ]; then
+   mkdir version || { echo "Can't create version folder."; exit 1; }
+fi
 
-set CURRENT_VERSION_FILE=%TEMP%\qnetmap_version.%RANDOM%
+CURRENT_VERSION=`git rev-list --all --count`
 
-git rev-list --all --count > %CURRENT_VERSION_FILE% 2> nul
-set CURRENT_VERSION_TEXT=###
-set /p CURRENT_VERSION_TEXT= < %CURRENT_VERSION_FILE%
-del %CURRENT_VERSION_FILE%
-set /a CURRENT_VERSION=%CURRENT_VERSION_TEXT%
+# if not integer regecting
+if [ "$CURRENT_VERSION" -ne "$CURRENT_VERSION" ] 2>/dev/null; then
+   echo 0 > $REVISION_FILE
+   echo 0x0000000000 > $REVISION_HASH_FILE
+   exit 0
+fi
 
-if %CURRENT_VERSION% == 0 goto NO_GIT
+if [ ! -f $REVISION_FILE ]; then 
+   echo $CURRENT_VERSION > $REVISION_FILE
+   CURRENT_HASH=`git rev-parse --short=10 HEAD`
+   echo 0x${CURRENT_HASH} > $REVISION_HASH_FILE
+   exit 0
+fi
 
-if NOT EXIST %REVISION_FILE% (
-   echo %CURRENT_VERSION% > %REVISION_FILE%
-   echo | set /p"=0x" > %REVISION_HASH_FILE%
-   git rev-parse --short=10 HEAD >> %REVISION_HASH_FILE%
-   goto END
-)
-
-set FILE_VERSION_TEXT=###
-set /p FILE_VERSION_TEXT= < %REVISION_FILE%
-set /a FILE_VERSION=%FILE_VERSION_TEXT%
-
-if NOT %CURRENT_VERSION% == %FILE_VERSION% (
-   echo %CURRENT_VERSION% > %REVISION_FILE%
-   echo | set /p"=0x" > %REVISION_HASH_FILE%
-   git rev-parse --short=10 HEAD >> %REVISION_HASH_FILE%
-)
-goto END
-
-:NO_GIT
-rem If there's no file with the version number, we have to create it.
-if NOT EXIST %REVISION_FILE% (
-   echo 0 > %REVISION_FILE%
-   echo 0x0000000000 > %REVISION_HASH_FILE%
-)
-
-:END
-
-
+FILE_VERSION=`cat $REVISION_FILE`
+if [ "$CURRENT_VERSION" -ne "$FILE_VERSION" ] 2>/dev/null; then
+   echo $CURRENT_VERSION > $REVISION_FILE
+   CURRENT_HASH=`git rev-parse --short=10 HEAD`
+   echo 0x${CURRENT_HASH} > $REVISION_HASH_FILE
+fi

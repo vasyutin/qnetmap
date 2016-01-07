@@ -5,4 +5,5 @@ if [ ! -d ../../build ]; then
 fi
 
 cd ../../build
-qmake ./projects/qmake/qnetmap.pro
+qmake ../projects/qmake/qnetmap.pro
+make
