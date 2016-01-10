@@ -3,6 +3,7 @@
 *.user
 *.suo
 *.ncb
+*.sdf
 */moc/*.*
 moc_*.*
 *.filters
