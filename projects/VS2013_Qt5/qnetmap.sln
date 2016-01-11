@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FD95EE82-90EF-4508-B881-3DF7857E2275}"
 EndProject
@@ -10,18 +10,36 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{F8276669-2907-47EA-B150-2FA092325646}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qnetmap_empty_map", "plugins\emptymapplugin\emptymapplugin.vcxproj", "{7D8DD5F6-A17D-45B8-90B4-DE7AF0A4DF37}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qnetmap_raster_map", "plugins\rastermapplugin\rastermapplugin.vcxproj", "{EC24E601-074B-4776-8BDF-D4412748E2BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qnetmap_universaltile_map", "plugins\universaltilesmapplugin\universaltilesmapplugin.vcxproj", "{3DD7128A-0C13-4A47-A3FB-351DECEA3108}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{228DE823-D0BA-4DC4-8832-809949BEDDA3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mapsspider", "apps\mapsspider\mapsspider.vcxproj", "{E0ED009F-5108-4100-A404-55B25C93D873}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mapsviewer", "apps\mapsviewer\mapsviewer.vcxproj", "{06AE7C47-6EFD-473B-84B3-660D51B6AB44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spider_task_creator", "apps\spidertaskcreator\spidertaskcreator.vcxproj", "{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}"
+	ProjectSection(ProjectDependencies) = postProject
+		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

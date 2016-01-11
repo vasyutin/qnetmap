@@ -1,9 +1,0 @@
-"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_$(InputName).cpp"
-
-
-"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp"
-Moc'ing %(Filename).%(Extension)...
-$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp
-$(QTDIR)\bin\moc.exe
-
-$(IntDir)$(MSBuildProjectName).log

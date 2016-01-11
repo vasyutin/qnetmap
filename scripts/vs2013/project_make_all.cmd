@@ -4,7 +4,7 @@
 @set SOLUTION_NAME=%1
 
 rem For Visual Studio 2008
-set VISUAL_STUDIO_VERSION=9
+set VISUAL_STUDIO_VERSION=12
 
 rem Определяем путь к выполняемому файлу Visual Studio
 set REGISTRY_PATH=HKLM\SOFTWARE\Microsoft\VisualStudio
