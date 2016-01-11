@@ -7,7 +7,7 @@ namespace qnetmap
 
    // -----------------------------------------------------------------------
    TBasePoint::TBasePoint(TGeometry* ParentGeometry_, QPointF Coordinate_) 
-      : w_ParentGeometry(ParentGeometry_), w_UserPointer(NULL), m_UserPointerNeedDelete(false)
+      : w_ParentGeometry(ParentGeometry_)/*, w_UserPointer(NULL), m_UserPointerNeedDelete(false)*/
    {
       setCoordinate(Coordinate_);
    }
@@ -19,7 +19,7 @@ namespace qnetmap
       //
       foreach(TBasePoint* Point, m_LinkedPoints) Point->removeLinkedPoint(this, false, false);
       //
-      if(w_UserPointer && m_UserPointerNeedDelete) delete w_UserPointer;
+      /*if(w_UserPointer && m_UserPointerNeedDelete) delete w_UserPointer;*/
    }
 
    // -----------------------------------------------------------------------

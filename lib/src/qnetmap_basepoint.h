@@ -42,11 +42,13 @@ namespace qnetmap
       //! \brief 
       void unlinkAll(void);
       //! \brief 
+      /*
       void setUserPointer(void* UserPointer_, const bool NeedDelete_ = false)
       { 
          w_UserPointer = UserPointer_;
          m_UserPointerNeedDelete = NeedDelete_;
       }
+      */
       //! returns the parent TGeometry of this TGeometry
       /*!
       * A TLineString is a composition of many Points. This methods returns the parent (the TLineString) of a TPoint
@@ -69,10 +71,13 @@ namespace qnetmap
       TLinkedPoints m_LinkedPoints;
       //! \var 
       static QAtomicInt m_BasePointAtomicInt;
+
+      /*
       //! \var the user defined pointer
       void* w_UserPointer;
       //! \var a sign of the need to remove the user defined pointer in the destructor
       bool  m_UserPointerNeedDelete;
+      */
    };
 }
 #endif
