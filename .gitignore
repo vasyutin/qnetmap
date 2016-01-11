@@ -8,4 +8,4 @@
 moc_*.*
 *.filters
 qrc_*.*
-/projects/build-*
+/projects/build*

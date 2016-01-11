@@ -2,7 +2,7 @@
 
 #include <malloc.h>
 
-void* operator new(unsigned int size, const char* filename, int line)
+void* operator new(size_t size, const char* filename, int line)
 {
    void *ptr = (void*)malloc(size);
    //AddTrack((DWORD)ptr, size, filename, line);

@@ -88,6 +88,8 @@ namespace qnetmap
    }
 
    // -----------------------------------------------------------------------
+   /* It was disabled previously. Check.
+
    TPoint::TPoint(const TPoint& Point_)
       : TGeometry(Point_.name(), Point_.description(QPointF()))
    {
@@ -108,6 +110,7 @@ namespace qnetmap
    m_Size      = Point_.m_Size;
    m_TextPosition = Point_.m_TextPosition;
    }
+   */
 
    // -----------------------------------------------------------------------
    TPoint::~TPoint()
