@@ -766,7 +766,7 @@
       <Message>Updating revision file...</Message>
     </PreBuildEvent>
     <BuildLog>
-      <Path>$(IntDir)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -793,7 +793,7 @@
       <Message>Updating revision file...</Message>
     </PreBuildEvent>
     <BuildLog>
-      <Path>$(IntDir)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -821,7 +821,7 @@
       <Message>Updating revision file...</Message>
     </PreBuildEvent>
     <BuildLog>
-      <Path>$(IntDir)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -850,7 +850,7 @@
       <Message>Updating revision file...</Message>
     </PreBuildEvent>
     <BuildLog>
-      <Path>$(IntDir)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
