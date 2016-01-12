@@ -23,10 +23,11 @@
 				<Host Template="mts%1.google.com" Minimum="0" Maximum="3"/>
 				<Query Template="/vt/n=404&amp;lyrs=m@%4&amp;hl=ru&amp;x=%2&amp;y=%3&amp;z=%1"/>
 			</Url>
-			<MapVersion Default="329000000">
-				<Source Url="maps.google.ru/maps/api/js?sensor=false" Prefix=".googleapis.com/vt?lyrs=m@" Postfix="\x26"/>
+			<MapVersion Default="262000000">
+				<Source Url="maps.google.com" Prefix=".google.ru/vt/lyrs=m@" Postfix="\x26"/>
 			</MapVersion>
 		</TileMapAdapter>
+
 		<TileMapAdapter Name="Google Satellite" Description="Google - спутник" Type="Satellite" Transparency="Opaque" FolderName="googlesatellite">
 			<GeoParameters>
 				<Projection Type="Mercator" Basis="EPSG:3857"/>
@@ -37,385 +38,11 @@
 				<Host Template="khms%1.google.com" Minimum="0" Maximum="3"/>
 				<Query Template="/kh/n=404&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;s="/>
 			</Url>
-			<MapVersion Default="189">
-				<Source Url="maps.google.ru/maps/api/js?sensor=false" Prefix=".google.com/kh?v=" Postfix="\x26"/>
+			<MapVersion Default="149">
+				<Source Url="maps.google.com" Prefix=".google.ru/kh/v=" Postfix="\x26"/>
 			</MapVersion>
 		</TileMapAdapter>
-		<TileMapAdapter Name="Google Road Map" Description="Google - дорожная сеть" Type="RoadMap" Transparency="Transparent" FolderName="googleroadmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="21"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="mts%1.google.com" Minimum="0" Maximum="3"/>
-				<Query Template="/vt/n=404&amp;lyrs=h@%4&amp;hl=ru&amp;x=%2&amp;y=%3&amp;z=%1"/>
-			</Url>
-			<MapVersion Default="329000000">
-				<Source Url="maps.google.ru/maps/api/js?sensor=false" Prefix=".googleapis.com/vt?lyrs=m@" Postfix="\x26"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Open Street Map" Description="Open Street Map - схема" Type="Scheme" Transparency="Opaque" FolderName="openstreetmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.tile.openstreetmap.org" Minimum="a" Maximum="b"/>
-				<Query Template="/%1/%2/%3.png"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Open Street Map Россия" Description="Open Street Map Россия - схема" Type="Scheme" Transparency="Opaque" FolderName="openstreetmaprussia">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="openmapsurfer.uni-hd.de/tiles/roads"/>
-				<Query Template="/x=%2&amp;y=%3&amp;z=%1"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Open Street Map Россия - границы" Description="Open Street Map Россия - административное деление" Type="Scheme" Transparency="Transparent" FolderName="openstreetmaprussiaadmin">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="openmapsurfer.uni-hd.de/tiles/adminb"/>
-				<Query Template="/x=%2&amp;y=%3&amp;z=%1"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="MapQuest-OSM" Description="MapQuest-OSM - схема" Type="Scheme" Transparency="Opaque" FolderName="mapquestosm">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="otile%1.mqcdn.com/tiles/1.0.0/map" Minimum="1" Maximum="4"/>
-				<Query Template="/%1/%2/%3.png"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="MapQuest Open Aerial" Description="MapQuest Open Aerial - спутник" Type="Scheme" Transparency="Opaque" FolderName="mapquestopenaerial">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="11"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="otile%1.mqcdn.com/tiles/1.0.0/sat" Minimum="1" Maximum="4"/>
-				<Query Template="/%1/%2/%3.png"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Nokia Satellite" Description="Nokia - спутник" Type="Satellite" Transparency="Opaque" FolderName="nokiasatellite">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.nlp.nokia.com" Minimum="1" Maximum="4"/>
-				<Query Template="/maptile/2.1/maptile/%4/hybrid.day/%1/%2/%3/256/png8?lg=RUS&amp;token=r0sR1DzqDkS6sDnh902FWQ"/>
-			</Url>
-			<MapVersion Default="newest">   <!-- newest - для получения последних -->
-				<!--Source Url="static.here.sc/maps/42313/resources/i18n/ru/RU/core/js/payload.c.js" Prefix="this.tileVersion=&quot;" Postfix="&quot;"/-->
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Nokia Map" Description="Nokia - схема" Type="Scheme" Transparency="Opaque" FolderName="nokiamap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url> <!-- http://1.maps.nlp.nokia.com/maptile/2.1/maptile/dea75fd608/normal.day/4/8/4/256/png8?token=r0sR1DzqDkS6sDnh902FWQ&lg=RUS -->
-				<Host Template="%1.maps.nlp.nokia.com" Minimum="1" Maximum="4"/>
-				<Query Template="/maptile/2.1/maptile/%4/normal.day/%1/%2/%3/256/png8?lg=RUS&amp;token=r0sR1DzqDkS6sDnh902FWQ&amp;appId=nokiaMaps"/>
-			</Url>
-			<MapVersion Default="newest">   <!-- newest - для получения последних -->
-				<!--Source Url="static.here.sc/maps/42313/resources/i18n/ru/RU/core/js/payload.c.js" Prefix="this.tileVersion=&quot;" Postfix="&quot;"/-->
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Nokia Map (grey)" Description="Nokia - схема (grey)" Type="Scheme" Transparency="Opaque" FolderName="nokiamapgrey">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.nlp.nokia.com" Minimum="1" Maximum="4"/>
-				<Query Template="/maptile/2.1/maptile/%4/normal.day.grey/%1/%2/%3/256/png8?lg=RUS&amp;token=r0sR1DzqDkS6sDnh902FWQ&amp;appId=nokiaMaps"/>
-			</Url>
-			<MapVersion Default="newest">   <!-- newest - для получения последних -->
-				<!--Source Url="static.here.sc/maps/42313/resources/i18n/ru/RU/core/js/payload.c.js" Prefix="this.tileVersion=&quot;" Postfix="&quot;"/-->
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Nokia Map (transit)" Description="Nokia - схема (transit)" Type="Scheme" Transparency="Opaque" FolderName="nokiamaptransit">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.nlp.nokia.com" Minimum="1" Maximum="4"/>
-				<Query Template="/maptile/2.1/maptile/%4/normal.day.transit/%1/%2/%3/256/png8?lg=RUS&amp;token=r0sR1DzqDkS6sDnh902FWQ&amp;appId=nokiaMaps"/>
-			</Url>
-			<MapVersion Default="newest">   <!-- newest - для получения последних -->
-				<!--Source Url="static.here.sc/maps/42313/resources/i18n/ru/RU/core/js/payload.c.js" Prefix="this.tileVersion=&quot;" Postfix="&quot;"/-->
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Nokia Terrain" Description="Nokia - местность" Type="Scheme" Transparency="Opaque" FolderName="nokiaterrain">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.nlp.nokia.com" Minimum="1" Maximum="4"/>
-				<Query Template="/maptile/2.1/maptile/%4/terrain.day/%1/%2/%3/256/png8?lg=RUS&amp;token=r0sR1DzqDkS6sDnh902FWQ&amp;appId=nokiaMaps"/>
-			</Url>
-			<MapVersion Default="newest">   <!-- newest - для получения последних -->
-				<!--Source Url="static.here.sc/maps/42313/resources/i18n/ru/RU/core/js/payload.c.js" Prefix="this.tileVersion=&quot;" Postfix="&quot;"/-->
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yandex Map" Description="Yandex - схема" Type="Scheme" Transparency="Opaque" FolderName="yandexmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3395"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="18"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="vec0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
-				<Query Template="/tiles?l=map&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
-			</Url>
-			<MapVersion Default="4.47.1">
-				<Source Url="api-maps.yandex.ru/2.0-stable/?lang=ru-RU" Prefix="'map':'{version:'" Postfix="'"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yandex People's Map" Description="Yandex People's - схема" Type="Scheme" Transparency="Opaque" FolderName="yandexpeoplesmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3395"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="18"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="wvec.maps.yandex.net"/>
-				<Query Template="/?l=wmap&amp;x=%2&amp;y=%3&amp;z=%1&amp;ts=1390544567297"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yandex People's Transparent Map" Description="Yandex People's - прозрачная схема" Type="Scheme" Transparency="Transparent" FolderName="yandextransparentpeoplesmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3395"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="18"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="wvec.maps.yandex.net"/>
-				<Query Template="/?l=wskl&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yandex Satellite" Description="Yandex - спутник" Type="Satellite" Transparency="Opaque" FolderName="yandexsatellite">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3395"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="sat0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
-				<Query Template="/tiles?l=sat&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
-			</Url>
-			<MapVersion Default="3.247.0">
-				<Source Url="api-maps.yandex.ru/2.0-stable/?lang=ru-RU" Prefix="'sat':'{version:'" Postfix="'"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yandex Road Map" Description="Yandex - дорожная сеть" Type="RoadMap" Transparency="Transparent" FolderName="yandexroadmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3395"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="18"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="vec0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
-				<Query Template="/tiles?l=skl&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
-			</Url>
-			<MapVersion Default="4.47.1">
-				<Source Url="api-maps.yandex.ru/2.0-stable/?lang=ru-RU" Prefix="'skl':'{version:'" Postfix="'"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yahoo Map" Description="Yahoo - схема" Type="Scheme" Transparency="Opaque" FolderName="yahoomap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="Yahoo"/>
-				<Zooms Minimum="2" Maximum="18" Shift="1"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="maps%1.yimg.com" Minimum="1" Maximum="2"/>
-				<Query Template="/hx/tl?b=1&amp;v=%4&amp;.intl=en&amp;x=%2&amp;y=%3&amp;z=%1&amp;r=1"/>
-			</Url>
-			<MapVersion Default="4.3"/>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yahoo Satellite" Description="Yahoo - спутник" Type="Satellite" Transparency="Opaque" FolderName="yahoosatellite">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="Yahoo"/>
-				<Zooms Minimum="2" Maximum="18" Shift="1"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="maps%1.yimg.com" Minimum="1" Maximum="2"/>
-				<Query Template="/ae/ximg?v=%4&amp;t=a&amp;s=256&amp;.intl=en&amp;x=%2&amp;y=%3&amp;z=%1&amp;r=1"/>
-			</Url>
-			<MapVersion Default="1.9"/>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Yahoo Road Map" Description="Yahoo - дорожная сеть" Type="RoadMap" Transparency="Transparent" FolderName="yahooroadmap">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="Yahoo"/>
-				<Zooms Minimum="2" Maximum="18" Shift="1"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="maps%1.yimg.com" Minimum="1" Maximum="2"/>
-				<Query Template="/hx/tl?b=1&amp;v=%4&amp;t=h&amp;.intl=en&amp;x=%2&amp;y=%3&amp;z=%1&amp;r=1"/>
-			</Url>
-			<MapVersion Default="4.3"/>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Kosmosnimki IRC Satellite" Description="Kosmosnimki IRC - спутник" Type="Satellite" Transparency="Opaque" FolderName="ircsatellite">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="16"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="irs.gis-lab.info"/>
-				<Query Template="/?layers=irs&amp;request=GetTile&amp;z=%1&amp;x=%2&amp;y=%3"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Navitel" Description="Navitel - схема" Type="Scheme" Transparency="Opaque" FolderName="navitel">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00BottomLeft"/>
-				<Zooms Minimum="3" Maximum="17"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="m0%1.navitel.su" Minimum="1" Maximum="3"/>
-				<Query Template="/navitms.fcgi?t=%2,%3,%1&amp;hl=ru" CoordinatesWidth="8" ZoomWidth="2"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Virtual Earth Satellite" Description="Virtual Earth - спутник" Type="Satellite" Transparency="Opaque" FolderName="virtualearthsatellite">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="ecn.t%1.tiles.virtualearth.net" Minimum="0" Maximum="3"/>
-				<Query Template="/tiles/a%5.jpeg?g=%4"/>
-			</Url>
-			<MapVersion Default="918">
-				<Source Url="ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx" Prefix="generations[aerialStyle]=" Postfix=";"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Virtual Earth Map" Description="Virtual Earth - схема" Type="Satellite" Transparency="Opaque" FolderName="virtualearthscheme">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="ecn.t%1.tiles.virtualearth.net" Minimum="0" Maximum="3"/>
-				<Query Template="/tiles/r%5.jpeg?g=%4"/>
-			</Url>
-			<MapVersion Default="918">
-				<Source Url="ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx" Prefix="generations[roadStyle]=" Postfix=";"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Virtual Earth Hybrid" Description="Virtual Earth - гибрид" Type="Satellite" Transparency="Opaque" FolderName="virtualearthhybrid">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="ecn.t%1.tiles.virtualearth.net" Minimum="0" Maximum="3"/>
-				<Query Template="/tiles/h%5.jpeg?g=%4"/>
-			</Url>
-			<MapVersion Default="918">
-				<Source Url="ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx" Prefix="generations[hybridStyle]=" Postfix=";"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Virtual Earth Hill Shaded" Description="Virtual Earth - hill shaded" Type="Scheme" Transparency="Opaque" FolderName="virtualearthhillshaded">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="19"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="ecn.dynamic.t%1.tiles.virtualearth.net" Minimum="0" Maximum="3"/>
-				<Query Template="/comp/CompositionHandler/%5?mkt=en-us&amp;it=G,VE,BX,L,LA&amp;shading=hill&amp;n=z"/>
-			</Url>
-			<MapVersion Default="918"> <!-- Only to control the tiles. In query template %4 not present! -->
-				<Source Url="ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx" Prefix="generations[roadStyle]=" Postfix=";"/>
-			</MapVersion>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Росреестр основа" Description="Росреестр основа" Type="Scheme" Transparency="Opaque" FolderName="rosreestrbase">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.rosreestr.ru" Minimum="a" Maximum="c"/>
-				<Query Template="/arcgis/rest/services/BaseMaps/BaseMap/MapServer/tile/%1/%3/%2"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Росреестр надписи" Description="Росреестр надписи" Type="Scheme" Transparency="Transparent" FolderName="rosreestrtext">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="0" Maximum="20"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="%1.maps.rosreestr.ru" Minimum="a" Maximum="c"/>
-				<Query Template="/arcgis/rest/services/BaseMaps/Anno/MapServer/tile/%1/%3/%2"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Google Weather" Description="Google - погода" Type="Information" Transparency="Transparent" Updatability="Dynamic">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="21"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="mts%1.google.com" Minimum="0" Maximum="3"/>
-				<Query Template="/mapslt?lyrs=weather_c_ms|invert:1&amp;x=%2&amp;y=%3&amp;z=%1&amp;w=256&amp;h=256&amp;gl=ru&amp;hl=ru"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Navitel пробки" Description="Navitel - пробки" Type="Information" Transparency="Transparent" Updatability="Dynamic">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00BottomLeft"/>
-				<Zooms Minimum="3" Maximum="17"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="m0%1.navitel.su" Minimum="1" Maximum="3"/>
-				<Query Template="/navitms.fcgi?j=%2,%3,%1&amp;hl=ru" CoordinatesWidth="8" ZoomWidth="2"/>
-			</Url>
-		</TileMapAdapter>
-		<TileMapAdapter Name="Google Clouds" Description="Google - облака" Type="Information" Transparency="Transparent" Updatability="Dynamic">
-			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:3857"/>
-				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="1" Maximum="18"/>
-			</GeoParameters>
-			<Url>
-				<Host Template="mt%1.google.com" Minimum="0" Maximum="3"/>
-				<Query Template="/vt/n=404&amp;lyrs=h@%4,weather_nolabels,weather_0cloud&amp;hl=ru&amp;src=app&amp;x=%2&amp;y=%3&amp;z=%1"/>
-			</Url>
-			<MapVersion Default="169000000">
-				<Source Url="maps.google.com" Prefix=".google.com/vt/lyrs=h@" Postfix="\x26"/>
-			</MapVersion>
-		</TileMapAdapter>
+
 		<TileMapAdapter Name="Google пробки" Description="Google - пробки" Type="Information" Transparency="Transparent" Updatability="Dynamic">
 			<GeoParameters>
 				<Projection Type="Mercator" Basis="EPSG:3857"/>
@@ -430,18 +57,111 @@
 				<Source Url="maps.google.com" Prefix=".google.com/vt/lyrs=h@" Postfix="\x26"/>
 			</MapVersion>
 		</TileMapAdapter>
-		<TileMapAdapter Name="Aple Map" Description="Aple - схема" Type="Scheme" Transparency="Opaque" FolderName="aplemap">
+		
+		<TileMapAdapter Name="Google Weather" Description="Google - погода" Type="Information" Transparency="Transparent" Updatability="Dynamic">
 			<GeoParameters>
-				<Projection Type="Mercator" Basis="EPSG:900913"/>
+				<Projection Type="Mercator" Basis="EPSG:3857"/>
 				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
-				<Zooms Minimum="3" Maximum="14"/>
+				<Zooms Minimum="1" Maximum="21"/>
 			</GeoParameters>
 			<Url>
-				<Host Template="gsp2.apple.com"/>
-				<Query Template="/tile?api=1&amp;style=slideshow&amp;layers=default&amp;lang=en_EN&amp;z=%1&amp;x=%2&amp;y=%3&amp;v=%4"/>
+				<Host Template="mts%1.google.com" Minimum="0" Maximum="3"/>
+				<Query Template="/mapslt?lyrs=weather_c_ms|invert:1&amp;x=%2&amp;y=%3&amp;z=%1&amp;w=256&amp;h=256&amp;gl=ru&amp;hl=ru"/>
 			</Url>
-			<MapVersion Default="10">
+		</TileMapAdapter>
+		
+		<TileMapAdapter Name="Open Street Map" Description="Open Street Map - схема" Type="Scheme" Transparency="Opaque" FolderName="openstreetmap">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3857"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
+				<Zooms Minimum="0" Maximum="19"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="%1.tile.openstreetmap.org" Minimum="a" Maximum="b"/>
+				<Query Template="/%1/%2/%3.png"/>
+			</Url>
+		</TileMapAdapter>
+
+		<TileMapAdapter Name="Yandex Map" Description="Yandex - схема" Type="Scheme" Transparency="Opaque" FolderName="yandexmap">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3395"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
+				<Zooms Minimum="0" Maximum="18"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="vec0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
+				<Query Template="/tiles?l=map&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
+			</Url>
+			<MapVersion Default="4.28.0">
+				<Source Url="api-maps.yandex.ru/2.0.38/?lang=ru-RU" Prefix="'map':{version:'" Postfix="'"/>
 			</MapVersion>
 		</TileMapAdapter>
+
+		<TileMapAdapter Name="Yandex Satellite" Description="Yandex - спутник" Type="Satellite" Transparency="Opaque" FolderName="yandexsatellite">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3395"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
+				<Zooms Minimum="0" Maximum="19"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="sat0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
+				<Query Template="/tiles?l=sat&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
+			</Url>
+			<MapVersion Default="3.209.0">
+				<Source Url="api-maps.yandex.ru/2.0.38/?lang=ru-RU" Prefix="'sat':{version:'" Postfix="'"/>
+			</MapVersion>
+		</TileMapAdapter>
+
+		<TileMapAdapter Name="Yandex Road Map" Description="Yandex - дорожная сеть" Type="RoadMap" Transparency="Transparent" FolderName="yandexroadmap">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3395"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
+				<Zooms Minimum="0" Maximum="18"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="vec0%1.maps.yandex.net" Minimum="1" Maximum="4"/>
+				<Query Template="/tiles?l=skl&amp;v=%4&amp;x=%2&amp;y=%3&amp;z=%1&amp;lang=ru_RU"/>
+			</Url>
+			<MapVersion Default="4.28.0">
+				<Source Url="api-maps.yandex.ru/2.0.38/?lang=ru-RU" Prefix="'skl':{version:'" Postfix="'"/>
+			</MapVersion>
+		</TileMapAdapter>
+
+		<TileMapAdapter Name="2GIS" Description="2GIS - карта" Type="Scheme" Transparency="Opaque" FolderName="2gismap">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3857"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00TopLeft"/>
+				<Zooms Minimum="2" Maximum="18"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="tile%1.maps.2gis.com" Minimum="0" Maximum="3"/>
+				<Query Template="/tiles?x=%2&amp;y=%3&amp;z=%1&amp;v=1.1"/>
+			</Url>
+		</TileMapAdapter>
+
+		<TileMapAdapter Name="Navitel" Description="Navitel - схема" Type="Scheme" Transparency="Opaque" FolderName="navitel">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3857"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00BottomLeft"/>
+				<Zooms Minimum="3" Maximum="17"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="m0%1.navitel.su" Minimum="1" Maximum="3"/>
+				<Query Template="/navitms.fcgi?t=%2,%3,%1&amp;hl=ru" CoordinatesWidth="8" ZoomWidth="2"/>
+			</Url>
+		</TileMapAdapter>
+		
+		<TileMapAdapter Name="Navitel пробки" Description="Navitel - пробки" Type="Information" Transparency="Transparent" Updatability="Dynamic">
+			<GeoParameters>
+				<Projection Type="Mercator" Basis="EPSG:3857"/>
+				<Tiles SizeX="256" SizeY="256" Numbering="00BottomLeft"/>
+				<Zooms Minimum="3" Maximum="17"/>
+			</GeoParameters>
+			<Url>
+				<Host Template="m0%1.navitel.su" Minimum="1" Maximum="3"/>
+				<Query Template="/navitms.fcgi?j=%2,%3,%1&amp;hl=ru" CoordinatesWidth="8" ZoomWidth="2"/>
+			</Url>
+		</TileMapAdapter>
+		
 	</TileMapAdapters>
 </QNetMap>

@@ -79,8 +79,8 @@ namespace qnetmap {
 #define GCC_ATTRIBUTE_UNUSED
 #endif
 
-#include "qnetmap_translator.h"
-#include "qnetmap_base.h"
+//#include "qnetmap_translator.h"
+//#include "qnetmap_base.h"
 
 #if defined(WIN32) && defined(_DEBUG)
 #define _CRTDBG_MAP_ALLOC
@@ -94,7 +94,7 @@ namespace qnetmap {
 #define SELECTION_PADDING  2
 
 #define QNETMAP_VERSION_MAJOR  2
-#define QNETMAP_VERSION_MINOR  0
+#define QNETMAP_VERSION_MINOR  1
 #define QNETMAP_VERSION        0x020000
 
 
@@ -146,9 +146,9 @@ namespace qnetmap
    class QNETMAP_EXPORT TSleep : public QThread
    {
    public:
-      static void  sleep(unsigned long Secs_)  { QThread::sleep(Secs_); }
-      static void msleep(unsigned long MSecs_) { QThread::msleep(MSecs_); }
-      static void usleep(unsigned long USecs_) { QThread::usleep(USecs_); }
+      static void  sleep(unsigned long Secs_)  {QThread::sleep(Secs_);}
+      static void msleep(unsigned long MSecs_) {QThread::msleep(MSecs_);}
+      static void usleep(unsigned long USecs_) {QThread::usleep(USecs_);}
    };
 
    template <typename T> int sgn(T val) {
@@ -182,5 +182,8 @@ namespace qnetmap
       QAtomicInt& m_AtomicInt;
    };
 }
+
+#include "qnetmap_translator.h"
+#include "qnetmap_base.h"
 
 #endif // QNETMAP_GLOBAL_H

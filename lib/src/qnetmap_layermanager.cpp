@@ -92,7 +92,7 @@ namespace qnetmap
    }
 
    //----------------------------------------------------------------
-   TLayers const& TLayerManager::layers()
+   const TLayers& TLayerManager::layers()
    {
       return m_Layers;
    }
@@ -200,7 +200,7 @@ namespace qnetmap
    }
    
    //----------------------------------------------------------------
-   inline void TLayerManager::setMiddle( const QList<QPointF>& Coordinates_, const bool MapUpdate_ /*= true*/ )
+   void TLayerManager::setMiddle( const QList<QPointF>& Coordinates_, const bool MapUpdate_ /*= true*/ )
    {
    qreal X = 0;
    qreal Y = 0;
@@ -311,10 +311,11 @@ namespace qnetmap
    //----------------------------------------------------------------
    void TLayerManager::layerGeometryClicked(TGeometry* Geometry_, QPointF Point_, QMouseEvent* Event_)
    {
+      Q_UNUSED(Point_)
       bool ControlKeyPressed = Event_->button() == Qt::LeftButton && Event_->modifiers() == Qt::ControlModifier;
       //
-      if(((Event_->button() == Qt::LeftButton  && Event_->type() == QEvent::MouseButtonPress) || 
-          (Event_->button() == Qt::RightButton && Event_->type() == QEvent::MouseButtonRelease) && !mouseMoved())) {
+      if(((Event_->button() == Qt::LeftButton && Event_->type() == QEvent::MouseButtonPress) ||
+         (Event_->button() == Qt::RightButton && Event_->type() == QEvent::MouseButtonRelease)) && !mouseMoved()) {
          bool EditMode = mapControl()->editMode();
          // set old focused object to unfocused
          if((EditMode || !Geometry_->isStatic())) {

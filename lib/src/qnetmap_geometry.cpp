@@ -33,19 +33,35 @@ namespace qnetmap
    /////////////////////////////////////////////////////////////////////////////
    TGeometry::TGeometry(const QString& name, const QString& Description_)
       : TBase(), TBasePoint(),
-        m_GeometryType("Geometry"), m_Name(name), m_Description(Description_),
-        w_Pen(NULL), m_IsVisible(true), m_TransparencyLevel(255), w_MapAdapter(NULL),
-        m_NameBoundingBox(), m_Zoom(-1), m_TextPosition(BottomMiddle),
-		  m_IsSelected(false), m_IsFocused(false), m_IsModified(false),
-        w_UserTag(NULL), m_UserString(""), m_BackPlane(false), m_OldEditMode(false),
-        m_TextFontName("Arial"), m_TextFontSize(8), m_TextColor(Qt::black),
-        m_IsStatic(false), m_NeedRecalcBoundingBox(true), m_NeedRecalcNameBoundingBox(true),
-        m_PenStyle(Qt::SolidLine)
+        m_GeometryType("Geometry"),
+        m_Name(name),
+        m_Description(Description_),
+        w_Pen(NULL),
+        m_IsVisible(true),
+        m_IsSelected(false),
+        m_IsFocused(false),
+        m_IsModified(false),
+        m_TransparencyLevel(255),
+        w_UserTag(NULL),
+        //m_UserString(""),
+        m_BackPlane(false),
+        m_TextFontName("Arial"),
+        m_TextFontSize(8),
+        m_TextColor(Qt::black),
+        m_IsStatic(false),
+        m_NeedRecalcBoundingBox(true),
+        m_NeedRecalcNameBoundingBox(true),
+        m_PenStyle(Qt::SolidLine),
+        w_MapAdapter(NULL),
+        m_NameBoundingBox(),
+        m_Zoom(-1),
+        m_TextPosition(BottomMiddle),
+        m_OldEditMode(false)
    {
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setVisible( bool Visible_ )
+   void TGeometry::setVisible( bool Visible_ )
    {
    bool OldValue = m_IsVisible;
    m_IsVisible = Visible_;
@@ -53,7 +69,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setSelected( const bool Selected_, const bool SendUpdate_ /*= true*/ )
+   void TGeometry::setSelected( const bool Selected_, const bool SendUpdate_ /*= true*/ )
    {
       if(Selected_ != m_IsSelected) {
          m_IsSelected = Selected_;
@@ -63,7 +79,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setFocused( const bool Focused_, const bool SendUpdate_ /*= true*/ )
+   void TGeometry::setFocused( const bool Focused_, const bool SendUpdate_ /*= true*/ )
    {
       if(Focused_ != m_IsFocused) {
          m_IsFocused = Focused_;
@@ -73,7 +89,7 @@ namespace qnetmap
    }
 
    //---------------------------------------------------------------------------
-   inline void TGeometry::setModified( const bool Modified_ /*= true*/, const bool EmitSignal_ /*= true*/ )
+   void TGeometry::setModified( const bool Modified_ /*= true*/, const bool EmitSignal_ /*= true*/ )
    {
       if(Modified_ != m_IsModified) {
          m_IsModified = Modified_;
@@ -239,16 +255,25 @@ namespace qnetmap
    //---------------------------------------------------------------------------
    void TGeometry::drawGeometry(QPainter* Painter_, const QRect& Viewport_, const QPoint Offset_)
    {
+       Q_UNUSED(Painter_)
+       Q_UNUSED(Viewport_)
+       Q_UNUSED(Offset_)
    }
 
 	//---------------------------------------------------------------------------
 	void TGeometry::drawSelection(QPainter* Painter_, const QRect& Viewport_, const QPoint Offset_)
 	{
-	}
+        Q_UNUSED(Painter_)
+        Q_UNUSED(Viewport_)
+        Q_UNUSED(Offset_)
+    }
 
    //---------------------------------------------------------------------------
    void TGeometry::drawBackPlane(QPainter* Painter_, const QRect& Viewport_, const QPoint Offset_)
    {
+       Q_UNUSED(Painter_)
+       Q_UNUSED(Viewport_)
+       Q_UNUSED(Offset_)
    }
 
    //---------------------------------------------------------------------------

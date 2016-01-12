@@ -1,0 +1,1 @@
+linguist ../../qnetmap_ru.ts

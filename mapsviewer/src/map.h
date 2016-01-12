@@ -56,6 +56,7 @@
 namespace Consts {
    static const char *Organization GCC_ATTRIBUTE_UNUSED = "QNetMap";
    static const char *Application  GCC_ATTRIBUTE_UNUSED = "MapsViewer";
+   static const char *LastGPXFileFolder  GCC_ATTRIBUTE_UNUSED = "LastGPXFileFolder";
 } // namespace Consts
 
 /*
@@ -102,6 +103,10 @@ public:
    void setMapsConfiguration(QString MapsStoreDirectory_, int MapsStoreType_);
    //! \brief 
    qnetmap::TMapWidget* mapWidget(void) const { return w_MapWidget; }
+
+   /// Show the area determined by Rect_ with the proper scale to fit the Rect_ to the
+   /// map's widget.
+   void setView(const QRectF &Rect_);
 
    //! \var Список интерфейсов карт
    QList<qnetmap::IMapAdapterInterface*> m_MapInterfaces;
@@ -173,6 +178,8 @@ private:
    QAction *m_ExitAction;
    /// Action for showing the about dialog.
    QAction *m_AboutAction;
+   /// Action for loading and displaying GPX files.
+   QAction *m_ShowGPXAction;
    //! \var 
    QMap<QAction*, QString> m_MapActions;
    //! \var признак игнорирования нажатий на карту
@@ -236,6 +243,8 @@ public slots:
    void printMap(QPrinter*);
    //! \brief Установить вид на центр карты
    void centerMap(void);
+   /// Load and display GPX file
+   void loadGPX(void);
    //! \brief Ловит переключение видимости слоя карты в меню 
    void changeVisibility(bool Visibility_);
    //! \brief Ловит изменения списка растровых карт

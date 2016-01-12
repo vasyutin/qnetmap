@@ -20,39 +20,39 @@ Options:
       перевода, которые будут использоваться (если присутствуют).</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="66"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="68"/>
         <source>Select...</source>
         <translation>Выбрать...</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="72"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="74"/>
         <source>Load</source>
         <translation>Загрузить</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="77"/>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="297"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="79"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="299"/>
         <source>Exit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="79"/>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="293"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="81"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="295"/>
         <source>Stop</source>
         <translation>Остановить</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="85"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="87"/>
         <source>Job file</source>
         <translation>Файл задания</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="87"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="89"/>
         <source>Maps folder</source>
         <translation>Каталог для карт</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="183"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="185"/>
         <source>Maps Spider:
 Overall tiles - %1,
 Tiles loaded - %2 (%3 %),
@@ -65,7 +65,7 @@ Time left - %6</source>
 Осталось времени - %6</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="195"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="197"/>
         <source>Maps Spider:
 Overall tiles - %1,
 Tiles loaded - %2 (%3 %),
@@ -77,58 +77,58 @@ Errors - %4 (%5 %)
 Запросов с ошибками - %4 (%5 %)</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="206"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="208"/>
         <source>Loaded %1 tiles of %2 (%3 errors)</source>
         <translation>Загружено %1 тайлов из %2 (%3 ошибок)</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="216"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="218"/>
         <source>Time left</source>
         <translation>Осталось времени</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="287"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="289"/>
         <source>Show</source>
         <translation>Показать</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="290"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="292"/>
         <source>Start</source>
         <translation>Начать</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="321"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="323"/>
         <source>Select folder</source>
         <translation>Выберите папку</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="337"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="339"/>
         <source>Select job file</source>
         <translation>Выберите файл с заданием</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="363"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="365"/>
         <source>Time left - --:--:-- </source>
         <translation>Осталось времени - --:--:--</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="385"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="387"/>
         <source>The necessary plugins was not found.</source>
         <translation>Необходимые плагины не найдены.</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="440"/>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="443"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="442"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="445"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="806"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="808"/>
         <source>%1d</source>
         <translation>%1д</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="891"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="893"/>
         <source>Maps loader</source>
         <translation>Загрузка карт</translation>
     </message>
@@ -136,22 +136,22 @@ Errors - %4 (%5 %)
 <context>
     <name>MapsViewerTranslator</name>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="122"/>
+        <location filename="../mapsviewer/src/map.cpp" line="125"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="133"/>
+        <location filename="../mapsviewer/src/map.cpp" line="136"/>
         <source>Finish</source>
         <translation>Завершить</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="188"/>
+        <location filename="../mapsviewer/src/map.cpp" line="191"/>
         <source>Print selected area...</source>
         <translation>Печать выбранной области карты...</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="194"/>
+        <location filename="../mapsviewer/src/map.cpp" line="197"/>
         <source>Print selected area with preview...</source>
         <translation>Предварительный просмотр выбранной области карты...</translation>
     </message>
@@ -167,7 +167,7 @@ Errors - %4 (%5 %)
     </message>
     <message>
         <location filename="../mapsviewer/src/configuration.cpp" line="41"/>
-        <location filename="../mapsviewer/src/map.cpp" line="209"/>
+        <location filename="../mapsviewer/src/map.cpp" line="212"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
@@ -202,7 +202,7 @@ Errors - %4 (%5 %)
         <translation>только хранилище</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="127"/>
+        <location filename="../mapsviewer/src/map.cpp" line="130"/>
         <source>The plugins for the map providers were not found in the folder &apos;%1&apos;.Specify the path to the plugins folder in the program&apos;s command line with the &apos;-p&apos; option.
 
 Ex. %2 -p PLUGINS_FOLDER
@@ -215,93 +215,108 @@ See the help for the details (%2 -h).</source>
 См. справку выводимую командой &apos;%2 -h&apos;.</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="172"/>
+        <location filename="../mapsviewer/src/map.cpp" line="175"/>
         <source>Go to the center of the map</source>
         <translation>Перейти в центр карты</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="176"/>
+        <location filename="../mapsviewer/src/map.cpp" line="179"/>
         <source>Calculate distance</source>
         <translation>Определить расстояние</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="180"/>
+        <location filename="../mapsviewer/src/map.cpp" line="183"/>
         <source>Print map...</source>
         <translation>Печать карты...</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="184"/>
+        <location filename="../mapsviewer/src/map.cpp" line="187"/>
         <source>Print preview...</source>
         <translation>Печать с просмотром...</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="199"/>
+        <location filename="../mapsviewer/src/map.cpp" line="202"/>
         <source>Create jobs to download the selected area...</source>
         <translation>Создать задания для загрузки выбранной области карты...</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="205"/>
+        <location filename="../mapsviewer/src/map.cpp" line="208"/>
         <source>Raster maps...</source>
         <translation>Растровые карты...</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="213"/>
+        <location filename="../mapsviewer/src/map.cpp" line="216"/>
         <source>Exit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="216"/>
-        <location filename="../mapsviewer/src/map.cpp" line="598"/>
+        <location filename="../mapsviewer/src/map.cpp" line="219"/>
+        <location filename="../mapsviewer/src/map.cpp" line="603"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="228"/>
+        <location filename="../mapsviewer/src/map.cpp" line="227"/>
+        <source>Load GPX...</source>
+        <translation>Загрузка GPX...</translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/map.cpp" line="235"/>
         <source>&amp;Tools</source>
         <translation>&amp;Инструменты</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="258"/>
+        <location filename="../mapsviewer/src/map.cpp" line="266"/>
         <source>&amp;Maps</source>
         <translation>&amp;Карты</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="288"/>
+        <location filename="../mapsviewer/src/map.cpp" line="296"/>
         <source>?</source>
         <translation>?</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="558"/>
+        <location filename="../mapsviewer/src/map.cpp" line="566"/>
         <source>Maps viewer</source>
         <translation>Просмотр карт</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="561"/>
+        <location filename="../mapsviewer/src/map.cpp" line="569"/>
         <source>Maps viewer and download job creator</source>
         <translation>Просмотр карт и выбор области для загрузки</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="571"/>
+        <location filename="../mapsviewer/src/map.cpp" line="576"/>
         <source>version</source>
         <translation>версия</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="579"/>
+        <location filename="../mapsviewer/src/map.cpp" line="584"/>
         <source>Hold down the left mouse button to select area pf the map.</source>
         <translation>Удерживайте нажатой левую кнопку мыши, чтобы выбрать область карты.</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="630"/>
-        <source>This software is a part of the  &lt;a href=&quot;http://sourceforge.net/projects/qnetmap&quot;&gt;QNetMap library&lt;/a&gt;. Copyright (c) 2011-2014 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates.Copyright (c) 2012-2014 OJSC T8 (&lt;a href=&quot;http://t8.ru&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</source>
-        <translation>Это программное обеспечение является частью &lt;a href=\&quot;http://sourceforge.net/projects/qnetmap\&quot;&gt; библиотеки QNetMap&lt;/a&gt;. Copyright (c) 2011-2014 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates. Copyright (c) 2012-2014 OJSC T8 (&lt;a href=\&quot;http://t8.ru\&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</translation>
+        <location filename="../mapsviewer/src/map.cpp" line="635"/>
+        <source>This software is a part of the  &lt;a href=&quot;http://sourceforge.net/projects/qnetmap&quot;&gt;QNetMap library&lt;/a&gt;. Copyright (c) 2011-2015 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates.Copyright (c) 2012-2014 OJSC T8 (&lt;a href=&quot;http://t8.ru&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</source>
+        <translation type="unfinished">Это программное обеспечение является частью &lt;a href=\&quot;http://sourceforge.net/projects/qnetmap\&quot;&gt; библиотеки QNetMap&lt;/a&gt;. Copyright (c) 2011-2014 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates. Copyright (c) 2012-2014 OJSC T8 (&lt;a href=\&quot;http://t8.ru\&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates. {2011-2015 ?} {2012-2014 ?} {8 ?} {8.?} {8.?}</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="648"/>
+        <location filename="../mapsviewer/src/map.cpp" line="685"/>
+        <source>GPX file to load</source>
+        <translation>Файл GPX</translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/map.cpp" line="686"/>
+        <source>GPX file (*.gpx)</source>
+        <translation>Файл GPX (*.gpx)</translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/map.cpp" line="653"/>
         <source>Third party software notices and/or additional terms and conditions:</source>
         <translation>Уведомления и условия третьих сторон, связанные со сторонним программным обеспечением:</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="657"/>
+        <location filename="../mapsviewer/src/map.cpp" line="662"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -319,6 +334,43 @@ Options:
    -p &lt;Folder&gt; - Папка, в которой находятся плагины картографических сервисов.
    -l &lt;Lang&gt; - Двухсимвольный код используемого языка. Указывает файлы
       перевода, которые будут использоваться (если присутствуют).</translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="38"/>
+        <location filename="../mapsviewer/src/gpx.cpp" line="80"/>
+        <source>Invalid XML root element.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="57"/>
+        <location filename="../mapsviewer/src/gpx.cpp" line="108"/>
+        <source>Invalid GPS coordinate.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="68"/>
+        <source>No waypoints data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="127"/>
+        <source>No route data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="142"/>
+        <source>Can&apos;t open file &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="150"/>
+        <source>File &apos;%1&apos; has error in line %2, column %3: %4.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/gpx.cpp" line="189"/>
+        <source>File &apos;%1&apos; contains no waypoint or route data.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -391,8 +443,8 @@ Options:
     </message>
     <message>
         <location filename="../lib/src/qnetmap_loaddialogwizard.cpp" line="147"/>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1039"/>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1054"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1063"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1078"/>
         <location filename="../lib/src/qnetmap_rastermapsdialog.cpp" line="283"/>
         <location filename="../lib/src/qnetmap_rastermapsdialog.cpp" line="675"/>
         <source>Error</source>
@@ -475,7 +527,7 @@ Options:
         <translation>Задайте префикс имени файла задания и папку, в которой будут сохранены задания. Имя файла задания будет сформировано из префикса и порядкового номера задания. Кнопка &apos;Завершить&apos; будет доступна, если заданная папка существует и в ней нет ни одного файла с заданным префиксом.</translation>
     </message>
     <message>
-        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="659"/>
+        <location filename="../mapsspider/src/mapsspiderdialog.cpp" line="661"/>
         <source>NetworkError: %1 %2</source>
         <translation>Ошибка сети: %1 %2</translation>
     </message>
@@ -620,12 +672,12 @@ Options:
         <translation>Ошибка сети: %1 %2, Имя тайла: %3</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapadapter.cpp" line="43"/>
+        <location filename="../lib/src/qnetmap_mapadapter.cpp" line="45"/>
         <source>Description is not set.</source>
         <translation>Описание на задано.</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapadapter.cpp" line="45"/>
+        <location filename="../lib/src/qnetmap_mapadapter.cpp" line="47"/>
         <source>Name is not set.</source>
         <translation>Имя не задано.</translation>
     </message>
@@ -701,27 +753,27 @@ line %2, position %3
 %5</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1034"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1058"/>
         <source>XML file error</source>
         <translation>Ошибка в XML-файле</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1040"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1064"/>
         <source>xml-file &quot;%1&quot; was not found</source>
         <translation>xml-файл &quot;%1&quot; не найден</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1047"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1071"/>
         <source>Error loading plugin module</source>
         <translation>Ошибка загрузки плагина</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1055"/>
+        <location filename="../lib/src/qnetmap_mapcontrol.cpp" line="1079"/>
         <source>The map services plugins was not found in folder &quot;%1&quot;.</source>
         <translation>В каталоге &quot;%1&quot; не найдены плагины для доступа к картографическим сервисам.</translation>
     </message>
     <message>
-        <location filename="../lib/src/qnetmap_layermanager.cpp" line="565"/>
+        <location filename="../lib/src/qnetmap_layermanager.cpp" line="566"/>
         <source>%1 elements</source>
         <translation>%1 элементов</translation>
     </message>
@@ -759,6 +811,37 @@ line %2, position %3
         <location filename="../lib/src/qnetmap_rulerscaling.cpp" line="70"/>
         <source>Fit to objects</source>
         <translation>Показать все объекты</translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="62"/>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="232"/>
+        <source>All files (*.*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="70"/>
+        <source>Folder...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="73"/>
+        <source>File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="76"/>
+        <source>The object type to browse is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="111"/>
+        <source>Select folder</source>
+        <translation type="unfinished">Выберите папку</translation>
+    </message>
+    <message>
+        <location filename="../lib/src/qnetmap_visual_elments.h" line="115"/>
+        <source>Select file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -49,8 +49,6 @@ namespace qnetmap
    //! \brief The control element of the widget and also the widget itself
    class QNETMAP_EXPORT TMapControl : public QWidget
    {
-      typedef QWidget TParent;
-
       Q_OBJECT
 
    public:
@@ -352,13 +350,13 @@ namespace qnetmap
       void drawScreen(QPainter* Painter_) const;
       //! \brief Получить указатель на менеджер слоев
       //! \return TLayerManager* - Указатель на менеджер слоев
-      inline TLayerManager* layerManager(void) const { return w_LayerManager; }
+      TLayerManager* layerManager(void) const { return w_LayerManager; }
       //! \brief Получить признак состояния прерывания загрузки
       //! \return bool - Признак состояния прерывания загрузки
-      inline bool abortLoading(void) const { return m_AbortLoading; }
+      bool abortLoading(void) const { return m_AbortLoading; }
       //! \brief Установить признак состояния прерывания загрузки
       //! \param bool AbortLoading_ - Признак состояния прерывания загрузки
-      inline void setAbortLoading(const bool AbortLoading_) { m_AbortLoading = AbortLoading_; }
+      void setAbortLoading(const bool AbortLoading_) { m_AbortLoading = AbortLoading_; }
       //! \brief
       bool setPointMarker(const QPointF Point_, QPixmap* m_PointMarker, bool NoUpdate_ = false);
       //! \brief Загрузка плагинов
@@ -370,7 +368,7 @@ namespace qnetmap
       //! \return IMapAdapterInterfaces - список интерфейсов карт загруженных плагинов
       static IMapAdapterInterfaces loadPlugins(const QString PluginsPath_ = "", const bool MessagePluginsNotFound_ = true);
       //! \brief Возвращает размер видимой области в пикселах
-      inline QSize size(void) const { return m_Size; }
+      QSize size(void) const { return m_Size; }
       //! \brief Преобразует экранные координаты в географические
       //! \param QPoint Point_ - Точка, содержащая экранные координаты
       //! \return QPointF - географические координаты точки
@@ -388,13 +386,13 @@ namespace qnetmap
       //! \return QPoint - экранные координаты точки
       QPoint worldToDisplayCoordinate(const QPointF PointF_);
       //! \brief
-      inline bool modified(void) const { return m_Modified; }
+      bool modified(void) const { return m_Modified; }
       //! \brief
-      inline void setModified(bool Modified_ = true);
+      void setModified(bool Modified_ = true);
       //! \brief 
-      inline bool editMode(void) const { return m_EditMode; }
+      bool editMode(void) const { return m_EditMode; }
       //! \brief 
-      inline void setEditMode(const bool Mode_ = true) { m_EditMode = Mode_; }
+      void setEditMode(const bool Mode_ = true) { m_EditMode = Mode_; }
       //! \brief Преобразует экранные координаты в глобальные пиксельные
       //! \param QPoint Point_ - экранные координаты
       //! \return QPoint - глобальные пиксельные координаты
@@ -404,9 +402,9 @@ namespace qnetmap
       //! \return QPoint - экранные координаты
       QPoint imageToDisplay(const QPoint Point_);
       //! \brief selection of objects in view mode
-      inline bool selectionInViewMode(void) const { return m_SelectionInViewMode; }
+      bool selectionInViewMode(void) const { return m_SelectionInViewMode; }
       //! \brief set selection of objects in view mode
-      inline void setSelectionInViewMode(const bool Selection_ = true) { m_SelectionInViewMode = Selection_; }
+      void setSelectionInViewMode(const bool Selection_ = true) { m_SelectionInViewMode = Selection_; }
       //! \brief 
       void deleteLayerManager(void);
 

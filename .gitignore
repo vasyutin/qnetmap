@@ -1,7 +1,11 @@
+/build/*
+/version/*
 *.user
 *.suo
 *.ncb
+*.sdf
 */moc/*.*
 moc_*.*
 *.filters
 qrc_*.*
+/projects/build*
