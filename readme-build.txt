@@ -1,22 +1,24 @@
-The QNetMap can be build in different ways depending of what build tools you are using. The standard distribution contains projects files for QMake/Qt Creator (for both Windows and Linux) and Visual Studio.
+The QNetMap can be build in different ways depending of what build tools you are using. The standard distribution contains projects files for QMake/Qt Creator (for both Windows and Linux) and Visual Studio 2008/2013.
 
 1. How to build with QMake
 
 1.1. Simple way
 
-Just navigate to the folder /project/qmake and run script build_linux.sh for Linux or build_windows.sh for Windows. To prevent spoiling the system all the compiled executables and libraries will be placed in the /build/release folder. This will not cause problems running apps under Windows. But under Linux having necessary shared libraries is not a common way. In that case you can run apps simply showing the system the path to the shared libraries in the command line, ex:
+Just navigate to the folder /projects/qmake and run script build_linux.sh for Linux or build_windows.sh for Windows. To prevent soiling the system all the compiled executables and libraries will be placed in the /build/release folder. This will not cause problems running sample applications under Windows. But under Linux having all the required shared libraries in the application folder is not a common way. In that case you can run the applications simply showing the system the path to the shared libraries in the command line, ex:
 
-Or you can put all the shared libraries to the system folders used to store such libraries (see the ld man for more info).
+LD_LIBRARY_PATH=. ./mapsviewer
 
-We assum that you have Qt4 or Qt5 installed and all the necessary build tools like compiler, qmake, moc, uic and rcc are avaliable from the command line. this way of building qnetmap was tested under Debian with Qt4 and Qt5 and Qt5 community edition with minigw for Windows.
+Or you can put all the shared libraries to the system folders used to store such libraries (see the 'man ld.so' for more info).
+
+We assume that you have Qt4 or Qt5 installed and all the necessary build tools like compiler, 'qmake', 'moc', 'uic' and 'rcc' are available from the command line. This way of building QNetMap was tested under Debian 8 (Jessie) with Qt4 and Qt5 and with Qt Open Source 5.5.1 (with MinGW 4.9.2) for Windows.
 
 1.2. More complicated way
 
-You can run qmake and make by yourself. Just navigate to the folder where you want the binaries and temporary files to be stored (/build is recomended) and qmake the main. pro file from withing the desired folder, ex:
+You can run 'qmake' and 'make' by yourself. Just navigate to the folder where you want the binaries and temporary files to be stored (/build is recommended) and 'qmake' the main .pro file from withing the desired folder, ex:
 
-qmake path to qnetmap.pro/qnetmap.pro
+qmake <path to /projects/qnetmap/qnetmap.pro>/qnetmap.pro
 
-You will get generated Makefile in the desired folder. Then you can run make (or nmake if you are using Visual Studio) to initiate the build. If you want the binaries for the 'debug' configuration you can run make debug. The binaries for debug configuration will be stored into the /yorr folder/debug and for the release into the /your folder/release.
+You will get generated 'Makefile' in the desired folder. Then you can run 'make' (or 'nmake' if you are using Visual Studio) to initiate the build. If you want the binaries for the 'debug' configuration you can run 'make debug'. The binaries for debug configuration will be stored into the <your folder>/debug and for the release into the <your folder>/release.
 
 2. How to build with Qt Creator
 
@@ -24,24 +26,14 @@ Just open the main project file /projects/qmake/qnetmap.pro and start building i
 
 3. How to build with Visual Studio
 
-By now we supply solutions for the following versions of Visual Studio. Assumed that you defined environment variable QTDIR for the 32-bit version of Qt. If yiu want to build with 64-bit version of Qt you have to define the variable QTDIR64 pointing to the root folder.
+By now we supply solution (.sln) with the project files (.vcproj) files for the Visual Studio 2008 with Qt4 and for the Visual Studio 2008 with Qt5. We assume that the environment variable QTDIR is defined for the 32-bit version of Qt. And it contains the path for the Qt root folder (thus the path to the Qt binaries is '%QTDIR%\bin'). If you want to build QNetMap against the 64-bit version of Qt you have to define the variable QTDIR64 pointing to the root folder of the 64-bit Qt distribution.
 
-The Qt VS integrator is not necessaryto be installed.
+You don't have to install 'Visual Studio Add-in for Qt' to build QNetMap. More than that this add-in can unexpectedly change the solution/project's settings before the build process. Thus the usage of 'Visual Studio Add-in for Qt' is not recommended.
 
-Just open the right project for yours VS and Qt version.
+To build QNetMap open the proper 'solution' file (/projects/VS2008_Qt4/qnetmap.sln for Visual Studio 2008 with Qt4 or /projects/VS2013_Qt5/qnetmap.sln for Visual Studio 2013 with Qt5) and start the build process.
 
-The solution/projects for the newer/older versions of Qt and Visual Studio can be derived from the supplied.
+The compiled binaries will be placed in the folder /build/<Platform>/<Configuration>, where the 'Platform' is 'Win32' or 'x64' and the 'Configuration' is 'Debug' or 'Release'.
 
-5. Building with Visual Studio 2010 and Qt5
+4. How to build Russian translation
 
-6. Building with Visual Studio 2013 and Qt5
-
-7. Building Russian translation
-
-If you want to build a Russian translation for the QNetMap you can make it by using the scripts in the folder 
-
-
-run the script which is placed in the folder /translations. The script /translations/win_compile_translations.cmd is user for Windows and script /translations/lin_compile_translations for Linux. These scripts compile the translation file named qnetmap_ru.ts and save it in the binaries folder.
-
-
- (2008 with Qt4, 2010 with Qt5, 2013 with Qt5)
+If you want to build a Russian translation for the QNetMap you can make it by using the scripts in the folder /translations/scripts. Under Windows use script /translations/scripts/win/compile_vs.cmd for the version build with Visual Studio and script /translations/scripts/win/compile_qmake.cmd for the version build with 'qmake'. Under Linux run script /translations/scripts/win/compile.sh. These scripts will compile the translation file named 'qnetmap_ru.ts' and save it in the binaries folder.
