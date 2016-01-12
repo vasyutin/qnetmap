@@ -22,12 +22,12 @@
 #ifndef QNETMAP_TRANSLATION_CONTEXT_H
 #define QNETMAP_TRANSLATION_CONTEXT_H
 
-#include <QObject>
+#include "qnetmap_global.h"
 
 namespace qnetmap {
    // Объект для перевода текстовых сообщений модуля, чтобы их потом было удобно отличить
    // от сообщений других модулей в программе Qt Linguist.
-   class QNetMapTranslator : public QObject {
+   class QNETMAP_EXPORT QNetMapTranslator : public QObject {
 	Q_OBJECT
 };
 }

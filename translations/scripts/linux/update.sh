@@ -1,0 +1,1 @@
+lupdate ../../../lib ../../../mapsspider ../../../mapsviewer -no-obsolete -codecfortr UTF-8 -ts ../../qnetmap_ru.ts

@@ -1,8 +1,15 @@
 TEMPLATE = subdirs
-SUBDIRS += lib/qnetmap.pro \
-    plugins/emptymap/emptymapplugin.pro \
-    plugins/rastermap/rastermapplugin.pro \
-    plugins/universaltilemap/universaltilesmapplugin.pro \
-    mapsspider/mapsspider.pro \
-    mapsviewer/mapsviewer.pro
-CONFIG += ordered
+SUBDIRS += lib \
+    plugins/emptymap \
+    plugins/rastermap \
+    plugins/universaltilesmap \
+    apps/mapsviewer \
+    apps/spider_task_creator \
+    apps/mapsspider
+
+emptymap.depends = lib
+rastermap.depends = lib
+universaltilesmap.depends = lib
+mapsviewer.depends = lib
+spider_task_creator.depends = lib
+mapsspider.depends = lib

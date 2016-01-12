@@ -110,25 +110,25 @@ namespace qnetmap
 			//! \brief
 			void setTension(const qreal Tension_ = 0);
 			//! \brief
-			inline qreal tension(void) const { return m_Tension; }
+			qreal tension(void) const { return m_Tension; }
 			//! \brief
 			void setContinuity(const qreal Continuity_ = 0);
 			//! \brief
-			inline qreal continuity(void) const { return m_Continuity; }
+			qreal continuity(void) const { return m_Continuity; }
 			//! \brief
 			void setBias(const qreal Bias_ = 0);
 			//! \brief
-			inline qreal bias(void) const { return m_Bias; }
+			qreal bias(void) const { return m_Bias; }
 			//! \brief
-			inline void setEditState(const TPointEditState EditState_) { m_EditState = EditState_; }
+			void setEditState(const TPointEditState EditState_) { m_EditState = EditState_; }
 			//! \brief
-			inline TPointEditState editState(void) const { return m_EditState; }
+			TPointEditState editState(void) const { return m_EditState; }
 			//! \brief
 			void nextEditState(void);
 			//! \brief
-			inline TFactors& factors(void) { return m_Factors; }
+			TFactors& factors(void) { return m_Factors; }
 			//! \brief
-			inline void setTensionContinuityBias(const qreal Tension_, const qreal Continuity_, const qreal Bias_) 
+			void setTensionContinuityBias(const qreal Tension_, const qreal Continuity_, const qreal Bias_) 
 			{
 				m_Tension = Tension_;
 				m_Continuity = Continuity_;
@@ -169,9 +169,9 @@ namespace qnetmap
 		//! \brief return offset painter path for polyline with his thickness
 		virtual QPainterPath painterPath(void);
 		//! \brief
-		inline unsigned long type(void) const { return m_Type; }
+		unsigned long type(void) const { return m_Type; }
 		//! \brief
-		inline void setType(const unsigned long Type_) { m_Type = Type_; update(); }
+		void setType(const unsigned long Type_) { m_Type = Type_; update(); }
 		//! \brief
 		virtual QPointF coordinate(const unsigned long PointNumber_);
 		//! \brief
@@ -234,9 +234,9 @@ namespace qnetmap
 		//! \brief
 		virtual long lastTouchesPoint(void) const { return m_LastTouchesPoint; }
 		//! \brief
-		inline void setClosed(const bool Closed_ = true) { m_Closed = Closed_; update(); }
+		void setClosed(const bool Closed_ = true) { m_Closed = Closed_; update(); }
 		//! \brief
-		inline bool closed(void) const { return m_Closed; }
+		bool closed(void) const { return m_Closed; }
 
    protected:
       //! \brief

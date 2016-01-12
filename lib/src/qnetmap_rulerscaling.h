@@ -50,7 +50,7 @@ namespace qnetmap
       void buttonPressed(void);
 
    private:
-      void mousePressEvent(QMouseEvent *Event_) { emit buttonPressed(); }
+      void mousePressEvent(QMouseEvent *Event_) {Q_UNUSED(Event_); emit buttonPressed();}
    };
 
    //////////////////////////////////////////////////////////////////////////

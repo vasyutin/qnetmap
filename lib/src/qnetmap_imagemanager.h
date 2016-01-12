@@ -40,7 +40,7 @@ namespace qnetmap
 
    //! \class TImageManager
    //! \brief Класс, управляющий получением тайлов
-   class QNETMAP_EXPORT TImageManager : public TBase
+   class QNETMAP_EXPORT TImageManager: public TBase
    {
    Q_OBJECT
 
@@ -120,9 +120,9 @@ namespace qnetmap
       TMapNetwork* mapNetwork(void) { return w_MapNetwork; }
 
 	  //! \brief Возвращает признак загрузки тайлов
-	  inline bool loadTiles(void) const { return m_LoadTiles; }
+	  bool loadTiles(void) const { return m_LoadTiles; }
 	  //! \brief Устанавливает признак загрузки тайлов
-	  inline void setLoadTiles(const bool LoadTiles_ = true) { m_LoadTiles = LoadTiles_; }
+	  void setLoadTiles(const bool LoadTiles_ = true) { m_LoadTiles = LoadTiles_; }
 
    private:
       explicit TImageManager(TParent* Parent_ = NULL);

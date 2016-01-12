@@ -38,26 +38,35 @@ namespace qnetmap
    QMutex             TMapAdapter::m_ActiveMapAdaptersMutex;
 
    /////////////////////////////////////////////////////////////////////////////////////////
-   TMapAdapter::TMapAdapter(int TileSizeX_, int TileSizeY_, int MinZoom_, int MaxZoom_)
-      : m_Transparency(Consts::OpaqueMap), m_SourceType(Consts::InternetMap),
-        m_IsInitialized(false), m_Description(QNetMapTranslator::tr("Description is not set.")),
+   TMapAdapter::TMapAdapter(int TileSizeX_, int TileSizeY_, int MinZoom_, int MaxZoom_):
+        m_Transparency(Consts::OpaqueMap),
+        m_SourceType(Consts::InternetMap),
+        m_IsInitialized(false),
+        m_Description(QNetMapTranslator::tr("Description is not set.")),
         m_MapControl(NULL),
         m_PluginName(QNetMapTranslator::tr("Name is not set.")),
-        m_TemplateMappingStoragePath("%1/notnamed"), m_MappingStoragePath("."),
+        m_TemplateMappingStoragePath("%1/notnamed"),
+        m_MappingStoragePath("."),
         m_ProjectionType(Consts::ProjectionTypeMercator),
         m_Basis(Consts::ProjectionBasisEPSG3857),
         m_TilesNumbering(Consts::TilesNumbering00TopLeft),
-        m_ZoomShift(0), m_Updatability(Consts::QueryUpdatabilityStatic),
-        m_MinZoom(MinZoom_), m_MaxZoom(MaxZoom_),
-        m_TileSizeX(TileSizeX_), m_TileSizeY(TileSizeY_),
-		  m_NumberOfXTiles(1), m_NumberOfYTiles(1), m_CurrentZoom(-1), m_Locale(QLocale(QLocale::English))
+        m_ZoomShift(0),
+        m_Updatability(Consts::QueryUpdatabilityStatic),
+        m_MinZoom(MinZoom_),
+        m_MaxZoom(MaxZoom_),
+        m_TileSizeX(TileSizeX_),
+        m_TileSizeY(TileSizeY_),
+        m_CurrentZoom(-1),
+        m_NumberOfXTiles(1),
+        m_NumberOfYTiles(1),
+        m_Locale(QLocale(QLocale::English))
    {
    // save the pointer to the object in the list of "active"
    m_ActiveMapAdapters.insert(this);
    }
 
    /////////////////////////////////////////////////////////////////////////////////////////
-   TMapAdapter::TMapAdapter(const TMapAdapter& Source_) : TBase()
+   TMapAdapter::TMapAdapter(const TMapAdapter& Source_): TBase()
    {
    m_ProjectionType = Source_.m_ProjectionType;
    m_Basis = Source_.m_Basis;
@@ -254,6 +263,7 @@ namespace qnetmap
    //----------------------------------------------------------------------
    QPoint TMapAdapter::coordinateToDisplay( const QPointF& Point_, int Zoom_ /*= -1*/ ) const
    {
+   Q_UNUSED(Zoom_)
    qreal x = (Point_.x()+ 180.) * (numberOfXTiles() * tileSizeX()) / 360.; // coord to pixel!
    qreal y = (1. - (log(tan(PI * 0.25 + deg_rad(Point_.y()) * 0.5)) / PI)) * 0.5 * (numberOfYTiles() * tileSizeY());
 

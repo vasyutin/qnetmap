@@ -34,6 +34,9 @@
 #include "../images/view_and_print_map16.hex"
 
 #include "qnetmap_pngimage.h"
+#include <qnetmap_version.h>
+
+#include "gpx.h"
 
 //------------------------------------------------------------------
 TMap::TMap(QWidget*) 
@@ -220,6 +223,10 @@ connect(m_AboutAction, SIGNAL(triggered(bool)), this, SLOT(aboutDialog()));
 w_MapProviderGroup = new QActionGroup(this);
 connect(w_MapProviderGroup, SIGNAL(triggered(QAction*)), this, 
 	SLOT(mapProviderSelected(QAction*)));
+
+m_ShowGPXAction = new QAction(MapsViewerTranslator::tr("Load GPX..."
+	/* Russian: Загрузить GPX... */), this);
+QNM_DEBUG_CHECK(connect(m_ShowGPXAction, SIGNAL(triggered(bool)), this, SLOT(loadGPX())));
 }
 
 //------------------------------------------------------------------
@@ -232,6 +239,7 @@ w_ToolsMenu->addAction(w_ToolsLoadArea);
 #ifndef _BUILD_SPIDER_TASK_CREATOR
 	w_ToolsMenu->addAction(w_ToolsCenterMap);
 	w_ToolsMenu->addAction(w_ToolsDistance);
+	w_ToolsMenu->addAction(m_ShowGPXAction);
 #endif
 
 w_ToolsMenu->addSeparator();
@@ -565,11 +573,8 @@ QString TMap::programTitle(void)
 // -----------------------------------------------------------------------
 QString TMap::programVersion(void)
 {
-const int Version = 
-	#include <qnetmap_revision.h>
-	;
-return MapsViewerTranslator::tr("version") + QString(" %1.%2.%3").arg(QNETMAP_VERSION_MAJOR)
-	.arg(QNETMAP_VERSION_MINOR).arg(Version);
+return MapsViewerTranslator::tr("version") + ' ' + qnetmap::VersionString() + " (" +
+	qnetmap::VersionHash() + ')';
 }
 
 // -----------------------------------------------------------------------
@@ -597,9 +602,9 @@ public:
 	TAboutDialog(void): QDialog(NULL, Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint) {
 		setWindowTitle(MapsViewerTranslator::tr("About"));
 		//
-		QPalette palette(palette());
-		palette.setColor(backgroundRole(), Qt::white);
-		setPalette(palette);
+        QPalette Palette(palette());
+        Palette.setColor(backgroundRole(), Qt::white);
+        setPalette(Palette);
 		setAutoFillBackground(true);
 		//
 		QVBoxLayout *Layout = new QVBoxLayout(this);
@@ -631,7 +636,7 @@ public:
 			"This software is a part of the  "
 			"<a href=\"http://sourceforge.net/projects/qnetmap\">"
 			"QNetMap library</a>. "
-			"Copyright (c) 2011-2014 JSC Sintels "
+			"Copyright (c) 2011-2015 JSC Sintels "
 			"(<a href=\"http://sintels.ru\">http://sintels.ru</a>) and/or its affiliates."
 			"Copyright (c) 2012-2014 OJSC T8 "
 			"(<a href=\"http://t8.ru\">http://t8.ru</a>) and/or its affiliates.");
@@ -664,3 +669,44 @@ public:
 TAboutDialog().exec();
 }
 
+// -----------------------------------------------------------------------
+void TMap::loadGPX(void)
+{
+qnetmap::TLayer *GeometryLayer = w_MapWidget->geometryLayer();
+if(!GeometryLayer) {
+	assert(!"loadGPX:: Layer 'Geometry Layer' was not defined.");
+	return;
+   }
+   
+QSettings Settings(Consts::Organization, Consts::Application);   
+QString Folder = Settings.value(Consts::LastGPXFileFolder).toString();   
+//   
+QString GPXFileName = QFileDialog::getOpenFileName(NULL, 
+	MapsViewerTranslator::tr("GPX file to load"), Folder, 
+	MapsViewerTranslator::tr("GPX file (*.gpx)"));
+if(GPXFileName.isEmpty()) return;
+//
+QString ErrorMessage;
+QRectF BoundingBox;
+if(!AddGPX(GeometryLayer, GPXFileName, BoundingBox, ErrorMessage)) {
+	QMessageBox::critical(NULL, programTitle(), ErrorMessage);
+	return;
+	}
+Settings.setValue(Consts::LastGPXFileFolder, QFileInfo(GPXFileName).absolutePath());
+setView(BoundingBox);
+}
+
+// -----------------------------------------------------------------------
+void TMap::setView(const QRectF &Rect_)
+{
+// Get the scale so the Rect_ fits the window.
+QSize Size = w_MapWidget->size();
+qreal dx = Rect_.width() / 20;
+qreal dy = Rect_.height() / 20;
+QRectF AdjustedRect(Rect_);
+AdjustedRect.adjust(-dx, -dy, dx, dy);
+//		
+int Zoom = w_MapWidget->calculateZoom(AdjustedRect, Size.width(), Size.height());
+w_MapWidget->setZoom(Zoom);
+w_MapWidget->setView(AdjustedRect.center());
+}

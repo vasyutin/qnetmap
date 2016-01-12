@@ -98,7 +98,7 @@ namespace qnetmap
       //! \brief Получить версию карт
       QString mapVersion(void) const { return m_MapVersion; }
       //! \brief Установка признака завершения запроса
-      inline void setFinished(void) { m_Finished = true; }
+      void setFinished(void) { m_Finished = true; }
 
    private:
       Q_DISABLE_COPY(TReplyParameters)

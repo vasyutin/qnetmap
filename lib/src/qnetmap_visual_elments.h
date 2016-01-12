@@ -40,7 +40,7 @@ namespace qnetmap
    //==============================================================================================
    //! \class TSelectPathButton
    //! \brief Реализует модифицированную кнопку, связанную с комбобоксом
-   class TPathButton : public QPushButton
+   class QNETMAP_EXPORT TPathButton: public QPushButton
    {
       Q_OBJECT
 
@@ -129,7 +129,7 @@ namespace qnetmap
    //==============================================================================================
    //! \class TComboBox
    //! \brief Реализует модифицированный комбобокс, хранящий в реестре список старых значений
-   class TComboBox : public QComboBox
+   class QNETMAP_EXPORT TComboBox: public QComboBox
    {
       Q_OBJECT
 
@@ -202,7 +202,7 @@ namespace qnetmap
    //==============================================================================================
    //! \class TPathField
    //! \brief Реализует модифицированный комбобокс, хранящий в реестре список старых значений
-   class TPathField : public QFrame
+   class QNETMAP_EXPORT TPathField: public QFrame
    {
       Q_OBJECT
 
@@ -271,7 +271,7 @@ namespace qnetmap
    //==============================================================================================
    //! \class TTextField
    //! \brief Реализует модифицированный комбобокс, хранящий в реестре список старых значений
-   class TTextField : public QFrame
+   class QNETMAP_EXPORT TTextField: public QFrame
    {
       Q_OBJECT
 

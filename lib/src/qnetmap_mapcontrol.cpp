@@ -54,10 +54,10 @@ namespace qnetmap
         w_PointMarkerImage(NULL),
         m_SelectionIsShown(Area_ == NULL || !Area_->toShow() || Area_->points().empty()),
         m_SelectArea(false),
-        m_Modified(false),
-        m_EditMode(false),
         w_GeometryClicked(NULL),
         w_OldGeometryClicked(NULL),
+        m_Modified(false),
+        m_EditMode(false),
         m_MouseMovedBetweenPressRelease(false),
         m_SelectionInViewMode(true)
    {
@@ -385,10 +385,18 @@ namespace qnetmap
       case RubberBandAreaType:
          // показываем выбранный прямоугольник
          QList<QPointF> Points = m_SelectedArea.points();
-         if(QApplication::style()->objectName() == "cleanlooks") {
+         /*if(QApplication::style()->objectName() == "cleanlooks") {
             w_RubberBand = new QRubberBand(QRubberBand::Rectangle, this);
             }
-         else w_RubberBand = new QRubberBand(QRubberBand::Line, this);
+         else w_RubberBand = new QRubberBand(QRubberBand::Line, this);*/
+         
+         // There was some issues with the old versions of Qt which didn't know new Windows
+         // versions.
+         w_RubberBand = new QRubberBand(QRubberBand::Rectangle, this);
+         if(style()->objectName() != QApplication::style()->objectName()) {
+				w_RubberBand->setStyle(style());
+				}
+         
          m_RubberBandCoordinate = QRectF(Points.first(), *(Points.begin() + 1));
          resizeRubberBand();
          w_RubberBand->show();
@@ -537,10 +545,16 @@ namespace qnetmap
             if(!m_SelectedArea.isValid() || !m_SelectedArea.isReadOnly()) {
                deleteRubberBand();
                QRect Rect(m_MouseClickPoint, QSize());
-               if(QApplication::style()->objectName() == "cleanlooks") {
+               /*if(QApplication::style()->objectName() == "cleanlooks") {
                   w_RubberBand = new QRubberBand(QRubberBand::Rectangle, this);
                   }
-               else w_RubberBand = new QRubberBand(QRubberBand::Line, this);
+               else w_RubberBand = new QRubberBand(QRubberBand::Line, this);*/
+               
+               w_RubberBand = new QRubberBand(QRubberBand::Rectangle, this);
+               if(style()->objectName() != QApplication::style()->objectName()) {
+						w_RubberBand->setStyle(style());
+						}
+               
                w_RubberBand->setGeometry(Rect.normalized());
                m_RubberBandCoordinate = displayToWorldCoordinate(Rect.normalized());
                w_RubberBand->show();
@@ -578,10 +592,16 @@ namespace qnetmap
                   setCursor(QCursor(Qt::CrossCursor));
                   m_DruggingPoint = Event_->pos();
                   if(!w_DraggingRubberBand) {
-                     if(QApplication::style()->objectName() == "cleanlooks") {
+                     /*if(QApplication::style()->objectName() == "cleanlooks") {
                         w_DraggingRubberBand = new QRubberBand(QRubberBand::Rectangle, this);
                         }
-                     else w_DraggingRubberBand = new QRubberBand(QRubberBand::Line, this);
+                     else w_DraggingRubberBand = new QRubberBand(QRubberBand::Line, this);*/
+                     
+                     w_DraggingRubberBand = new QRubberBand(QRubberBand::Rectangle, this);
+							if(style()->objectName() != QApplication::style()->objectName()) {
+								w_DraggingRubberBand->setStyle(style());
+								}
+                     
                      if(w_DraggingRubberBand) {
                         w_DraggingRubberBand->setGeometry(QRect(m_DruggingPoint, QSize()));
                         w_DraggingRubberBand->show();

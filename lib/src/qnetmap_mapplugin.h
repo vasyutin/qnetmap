@@ -40,7 +40,7 @@ namespace qnetmap
    //! \brief Шаблон класса плагина, реализующего интерфейс карты
    //! \param class TMapAdapterClass - класс, реализующий адаптер карты
    template<class TMapAdapterClass>
-   class QNETMAP_EXPORT TMapPlugin : public TMapAdapterClass, public IMapAdapterInterface
+   class TMapPlugin : public TMapAdapterClass, public IMapAdapterInterface
    {
    public:
       //! \brief Конструктор класса

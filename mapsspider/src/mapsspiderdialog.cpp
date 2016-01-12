@@ -27,6 +27,8 @@
 #include "qnetmap_mapnetwork.h"
 #include "mapsspider_translator.h"
 
+#include <qnetmap_version.h>
+
 //! \var список загружаемых карт
 std::vector<TMapParameters> g_Maps;
 //! \var количество одновременных запросов
@@ -894,8 +896,5 @@ return MapsSpiderTranslator::tr("Maps loader");
 //------------------------------------------------------------------
 QString TMapsSpiderDialog::programVersion(void)
 {
-int Version = 
-	#include <qnetmap_revision.h>
-	;
-return QString("%1.%2.%3").arg(QNETMAP_VERSION_MAJOR).arg(QNETMAP_VERSION_MINOR).arg(Version);
+return qnetmap::VersionString() + "-" + qnetmap::VersionHash();
 }
