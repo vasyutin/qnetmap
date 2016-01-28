@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{22d9ffca-1886-4811-ad2d-73aa9f168164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{89c7c516-2b3c-45ee-a528-05e4dc0f5748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moc">
+      <UniqueIdentifier>{68a95ccb-70bc-4e48-8b8b-290cd6be53a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{7355adf2-ddd1-4c92-b806-bf4c2e7f5f25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\mapsviewer\src\configuration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mapsviewer\src\gpx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mapsviewer\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mapsviewer\src\map.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_configuration.cpp">
+      <Filter>moc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_main.cpp">
+      <Filter>moc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_map.cpp">
+      <Filter>moc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_mapsviewer_translator.cpp">
+      <Filter>moc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\mapsviewer\icon\mapsviewer_icon.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\configuration.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\mapsviewer_translator.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\map.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\main.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
