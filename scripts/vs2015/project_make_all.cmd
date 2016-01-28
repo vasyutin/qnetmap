@@ -3,8 +3,8 @@
 @set PROJECT_NAME=%2
 @set SOLUTION_NAME=%1
 
-rem For Visual Studio 2013
-set VISUAL_STUDIO_VERSION=12
+rem For Visual Studio 2015
+set VISUAL_STUDIO_VERSION=14
 
 rem Определяем путь к выполняемому файлу Visual Studio
 set REGISTRY_PATH=HKLM\SOFTWARE\Microsoft\VisualStudio

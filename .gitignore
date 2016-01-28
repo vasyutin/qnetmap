@@ -6,6 +6,7 @@
 *.sdf
 */moc/*.*
 moc_*.*
-*.filters
 qrc_*.*
 /projects/build*
+.vc
+*.VC.opendb
