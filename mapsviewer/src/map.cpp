@@ -626,7 +626,7 @@ public:
 		Layout->addSpacing(8);
 		
 		// Russian: Это программное обеспечение является частью  
-		// <a href="http://sourceforge.net/projects/qnetmap">
+		// <a href="https://github.com/vasyutin/qnetmap">
 		// библиотеки QNetMap</a>. 
 		// Copyright (c) 2011-2014 JSC Sintels 
 		// (<a href="http://sintels.ru">http://sintels.ru</a>) and/or its affiliates.
@@ -634,9 +634,9 @@ public:
 		// (<a href="http://t8.ru">http://t8.ru</a>) and/or its affiliates.");
 		QString Caption = MapsViewerTranslator::tr(
 			"This software is a part of the  "
-			"<a href=\"http://sourceforge.net/projects/qnetmap\">"
+			"<a href=\"https://github.com/vasyutin/qnetmap\">"
 			"QNetMap library</a>. "
-			"Copyright (c) 2011-2015 JSC Sintels "
+			"Copyright (c) 2011-2016 JSC Sintels "
 			"(<a href=\"http://sintels.ru\">http://sintels.ru</a>) and/or its affiliates."
 			"Copyright (c) 2012-2014 OJSC T8 "
 			"(<a href=\"http://t8.ru\">http://t8.ru</a>) and/or its affiliates.");
