@@ -30,7 +30,7 @@ By now we supply solution (.sln) with the project files (.vcproj) files for the 
 
 You don't have to install 'Visual Studio Add-in for Qt' to build QNetMap. More than that this add-in can unexpectedly change the solution/project's settings before the build process. Thus the usage of 'Visual Studio Add-in for Qt' is not recommended.
 
-To build QNetMap open the proper 'solution' file (/projects/VS2008_Qt4/qnetmap.sln for Visual Studio 2008 with Qt4 or /projects/VS2013_Qt5/qnetmap.sln for Visual Studio 2013 with Qt5) and start the build process.
+To build QNetMap open the proper 'solution' file (/projects/VS2008_Qt4/qnetmap.sln for Visual Studio 2008 with Qt4, /projects/VS2013_Qt5/qnetmap.sln for Visual Studio 2013 with Qt5 or /projects/VS2015_Qt5/qnetmap.sln for Visual Studio 2015 with Qt5) and start the build process.
 
 The compiled binaries will be placed in the folder /build/<Platform>/<Configuration>, where the 'Platform' is 'Win32' or 'x64' and the 'Configuration' is 'Debug' or 'Release'.
 

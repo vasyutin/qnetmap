@@ -18,8 +18,8 @@ presentation you can draw your own objects in the given coordinates.
 
 QNetMap is distributed under the GNU Lesser General Public License (LGPL).
 
-Written by Sergey Shumeyko (sergey.shumeyko@gmail.com) and Sergey Vasyutin 
-(svpub@outlook.com).
+Written by Sergey Shumeyko (sergey.shumeyko [at] gmail.com) and Sergey Vasyutin 
+(svpro [at] outlook.com).
 
 The development of the library was supported by the "Sintels" LLC (ЗАО "Синтелс" - 
 http://sintels.ru) and OJSC "T8" (ОАО "Т8" - https://t8.ru). 
