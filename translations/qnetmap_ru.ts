@@ -296,11 +296,6 @@ See the help for the details (%2 -h).</source>
         <translation>Удерживайте нажатой левую кнопку мыши, чтобы выбрать область карты.</translation>
     </message>
     <message>
-        <location filename="../mapsviewer/src/map.cpp" line="635"/>
-        <source>This software is a part of the  &lt;a href=&quot;http://sourceforge.net/projects/qnetmap&quot;&gt;QNetMap library&lt;/a&gt;. Copyright (c) 2011-2015 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates.Copyright (c) 2012-2014 OJSC T8 (&lt;a href=&quot;http://t8.ru&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</source>
-        <translation type="unfinished">Это программное обеспечение является частью &lt;a href=\&quot;http://sourceforge.net/projects/qnetmap\&quot;&gt; библиотеки QNetMap&lt;/a&gt;. Copyright (c) 2011-2014 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates. Copyright (c) 2012-2014 OJSC T8 (&lt;a href=\&quot;http://t8.ru\&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates. {2011-2015 ?} {2012-2014 ?} {8 ?} {8.?} {8.?}</translation>
-    </message>
-    <message>
         <location filename="../mapsviewer/src/map.cpp" line="685"/>
         <source>GPX file to load</source>
         <translation>Файл GPX</translation>
@@ -314,6 +309,11 @@ See the help for the details (%2 -h).</source>
         <location filename="../mapsviewer/src/map.cpp" line="653"/>
         <source>Third party software notices and/or additional terms and conditions:</source>
         <translation>Уведомления и условия третьих сторон, связанные со сторонним программным обеспечением:</translation>
+    </message>
+    <message>
+        <location filename="../mapsviewer/src/map.cpp" line="635"/>
+        <source>This software is a part of the  &lt;a href=&quot;https://github.com/vasyutin/qnetmap&quot;&gt;QNetMap library&lt;/a&gt;. Copyright (c) 2011-2016 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates.Copyright (c) 2012-2014 OJSC T8 (&lt;a href=&quot;http://t8.ru&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</source>
+        <translation>Это программное обеспечение является частью &lt;a href=&quot;https://github.com/vasyutin/qnetmap&quot;&gt;библиотеки QNetMap&lt;/a&gt;. Copyright (c) 2011-2016 JSC Sintels (&lt;a href=&quot;http://sintels.ru&quot;&gt;http://sintels.ru&lt;/a&gt;) and/or its affiliates.Copyright (c) 2012-2014 OJSC T8 (&lt;a href=&quot;http://t8.ru&quot;&gt;http://t8.ru&lt;/a&gt;) and/or its affiliates.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/map.cpp" line="662"/>
