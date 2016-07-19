@@ -1364,7 +1364,10 @@ namespace qnetmap
             }
          }
       // подчищаем
-      delete NewMapInterface;
+      
+      // SV: Если я правильно понимаю, что этот объект уничтожается при уничтожении MapAdapter.
+      // Убрал до выяснения.
+      //delete NewMapInterface;
       }
    //
    return RetCode;
