@@ -10,3 +10,4 @@ qrc_*.*
 /projects/build*
 .vc
 *.VC.opendb
+*.VC.db
