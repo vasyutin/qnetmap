@@ -729,18 +729,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -760,10 +764,12 @@
       <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;Qt5PrintSupportd.lib;Qt5Xmld.lib</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>Updating revision file...</Message>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <BuildLog>
       <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
@@ -787,10 +793,12 @@
       <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;Qt5PrintSupportd.lib;Qt5Xmld.lib</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>Updating revision file...</Message>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <BuildLog>
       <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
@@ -815,10 +823,12 @@
       <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5PrintSupport.lib;Qt5Xml.lib</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>Updating revision file...</Message>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <BuildLog>
       <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
@@ -844,10 +854,12 @@
       <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5PrintSupport.lib;Qt5Xml.lib</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>cd $(SolutionDir)..\.. &amp; call $(SolutionDir)..\..\scripts\revision\git-revision.cmd $(SolutionDir)..\..\version\qnetmap_revision.h</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>Updating revision file...</Message>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <BuildLog>
       <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
