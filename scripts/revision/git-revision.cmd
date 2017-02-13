@@ -6,17 +6,6 @@ rem The script runs from the repo's root
 set REVISION_FILE=%1
 set REVISION_HASH_FILE=%REVISION_FILE%ash
 
-set LOCK_FILE=%TEMP%\qnetmap_version.lock
-
-:CHECK_LOCK
-if EXIST %LOCK_FILE% (
-   ping -n 2 127.0.0.1 > nul
-   goto CHECK_LOCK
-)
-
-rem Create lock file
-echo Lock > %LOCK_FILE%
-
 rem Create ./version folder if absent
 if NOT EXIST version (
    mkdir version
@@ -58,6 +47,5 @@ if NOT EXIST %REVISION_FILE% (
 )
 
 :END
-del %LOCK_FILE% > nul 2> nul
 
 

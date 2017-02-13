@@ -79,7 +79,7 @@ namespace qnetmap
       //! \param Name_ the new name of the geometry
       virtual void setName(QString const& Name_);
       //! \brief return the description of the geometry
-      virtual QString description(const QPointF Point_ = QPointF()) const {
+      virtual QString description(const QPointF &Point_ = QPointF()) const {
 			Q_UNUSED(Point_); return m_Description; 
 			}
       //! \brief sets the description of the geometry

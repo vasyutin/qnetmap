@@ -1,4 +1,4 @@
-The QNetMap can be build in different ways depending of what build tools you are using. The standard distribution contains projects files for QMake/Qt Creator (for both Windows and Linux) and Visual Studio 2008/2013.
+The QNetMap can be build in different ways depending of what build tools you are using. The standard distribution contains projects files for QMake/Qt Creator (for both Windows and Linux) and Visual Studio 2008/2015.
 
 1. How to build with QMake
 
@@ -26,7 +26,7 @@ Just open the main project file /projects/qmake/qnetmap.pro and start building i
 
 3. How to build with Visual Studio
 
-By now we supply solution (.sln) with the project files (.vcproj) files for the Visual Studio 2008 with Qt4 and for the Visual Studio 2008 with Qt5. We assume that the environment variable QTDIR is defined for the 32-bit version of Qt. And it contains the path for the Qt root folder (thus the path to the Qt binaries is '%QTDIR%\bin'). If you want to build QNetMap against the 64-bit version of Qt you have to define the variable QTDIR64 pointing to the root folder of the 64-bit Qt distribution.
+By now we supply solution (.sln) with the project files (.vcproj) files for the Visual Studio 2008 with Qt4 and for the Visual Studio 2015 with Qt5. We assume that the environment variable QTDIR is defined for the 32-bit version of Qt. And it contains the path for the Qt root folder (thus the path to the Qt binaries is '%QTDIR%\bin'). If you want to build QNetMap against the 64-bit version of Qt you have to define the variable QTDIR64 pointing to the root folder of the 64-bit Qt distribution.
 
 You don't have to install 'Visual Studio Add-in for Qt' to build QNetMap. More than that this add-in can unexpectedly change the solution/project's settings before the build process. Thus the usage of 'Visual Studio Add-in for Qt' is not recommended.
 

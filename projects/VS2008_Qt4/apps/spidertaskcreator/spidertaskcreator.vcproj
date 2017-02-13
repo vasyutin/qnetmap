@@ -30,7 +30,6 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 			<Tool
@@ -57,7 +56,7 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_BUILD_SPIDER_TASK_CREATOR;QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
+				PreprocessorDefinitions="_BUILD_SPIDER_TASK_CREATOR;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
@@ -121,7 +120,6 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 			<Tool
@@ -150,7 +148,7 @@
 				Optimization="0"
 				WholeProgramOptimization="false"
 				AdditionalIncludeDirectories="&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(ProjectDir)&quot;;&quot;$(ProjectDir)\..\..\..\..\lib\src&quot;;&quot;$(QTDIR64)\include\ActiveQt&quot;"
-				PreprocessorDefinitions="_BUILD_SPIDER_TASK_CREATOR;QT_NO_DEBUG;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
+				PreprocessorDefinitions="_BUILD_SPIDER_TASK_CREATOR;_WINDOWS;_DEBUG;_UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="true"
@@ -217,7 +215,6 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 			<Tool
@@ -312,7 +309,6 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 			<Tool

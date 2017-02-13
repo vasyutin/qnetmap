@@ -201,7 +201,7 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\Qt&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtXml&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				PreprocessorDefinitions="_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="3"
 				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
@@ -221,6 +221,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib"
 				AdditionalLibraryDirectories="$(QTDIR)/lib"
+				GenerateDebugInformation="true"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -277,10 +278,11 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(ProjectDir)\..\..\..\lib\src&quot;;&quot;$(ProjectDir)\..\..\..\lib\images&quot;;&quot;$(ProjectDir)\..\..\..\version&quot;;&quot;$(QTDIR64)\include&quot;;&quot;$(QTDIR64)\include\Qt&quot;;&quot;$(QTDIR64)\include\QtCore&quot;;&quot;$(QTDIR64)\include\QtGui&quot;;&quot;$(QTDIR64)\include\QtNetwork&quot;;&quot;$(QTDIR64)\include\QtXml&quot;"
-				PreprocessorDefinitions="QT_NO_DEBUG;_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
+				PreprocessorDefinitions="_DEBUG;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QNETMAP_LIB;QT_NO_OPENSSL"
 				ExceptionHandling="1"
 				RuntimeLibrary="3"
 				ProgramDataBaseFileName="$(OutDir)\$(ProjectName).pdb"
+				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
 			<Tool
@@ -296,6 +298,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="QtCored4.lib QtGuid4.lib QtNetworkd4.lib QtXmld4.lib"
 				AdditionalLibraryDirectories="$(QTDIR64)/lib"
+				GenerateDebugInformation="true"
 			/>
 			<Tool
 				Name="VCALinkTool"
