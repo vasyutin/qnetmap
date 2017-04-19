@@ -7,11 +7,23 @@
     <Filter Include="headers">
       <UniqueIdentifier>{89c7c516-2b3c-45ee-a528-05e4dc0f5748}</UniqueIdentifier>
     </Filter>
-    <Filter Include="moc">
-      <UniqueIdentifier>{68a95ccb-70bc-4e48-8b8b-290cd6be53a8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resources">
       <UniqueIdentifier>{7355adf2-ddd1-4c92-b806-bf4c2e7f5f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{6187c838-1e81-4f3e-b5cd-cd2f548d1360}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{d8f04f4c-88c2-4445-ae1e-76cd43a588a4}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,17 +39,29 @@
     <ClCompile Include="..\..\..\..\mapsviewer\src\map.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_configuration.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_configuration.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_main.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_configuration.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_map.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_main.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\build\moc\mapsviewer\moc_mapsviewer_translator.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_main.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_map.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_map.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mapsviewer_translator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mapsviewer_translator.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,13 +73,13 @@
     <CustomBuild Include="..\..\..\..\mapsviewer\src\configuration.h">
       <Filter>headers</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\..\..\mapsviewer\src\mapsviewer_translator.h">
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\main.h">
       <Filter>headers</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\mapsviewer\src\map.h">
       <Filter>headers</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\..\..\mapsviewer\src\main.h">
+    <CustomBuild Include="..\..\..\..\mapsviewer\src\mapsviewer_translator.h">
       <Filter>headers</Filter>
     </CustomBuild>
   </ItemGroup>

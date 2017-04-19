@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FD95EE82-90EF-4508-B881-3DF7857E2275}"
 EndProject
@@ -117,5 +117,8 @@ Global
 		{E0ED009F-5108-4100-A404-55B25C93D873} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
 		{06AE7C47-6EFD-473B-84B3-660D51B6AB44} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
 		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = $(DefaultQtVersion)
 	EndGlobalSection
 EndGlobal

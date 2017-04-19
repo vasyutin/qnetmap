@@ -54,6 +54,30 @@ if %3_==release-x64-only_ (
    set BUILD_X64_DEBUG=N
    )
 
+if %3_==d32_ (
+   set BUILD_WIN32_RELEASE=N
+   set BUILD_X64_DEBUG=N
+   set BUILD_X64_RELEASE=N
+   )
+
+if %3_==r32_ (
+   set BUILD_WIN32_DEBUG=N
+   set BUILD_X64_DEBUG=N
+   set BUILD_X64_RELEASE=N
+   )
+
+if %3_==d64_ (
+   set BUILD_WIN32_DEBUG=N
+   set BUILD_WIN32_RELEASE=N
+   set BUILD_X64_RELEASE=N
+   )
+
+if %3_==r64_ (
+   set BUILD_WIN32_DEBUG=N
+   set BUILD_WIN32_RELEASE=N
+   set BUILD_X64_DEBUG=N
+   )
+
 if %BUILD_WIN32_DEBUG%==Y (
    echo Making %SOLUTION_NAME%: %PROJECT_NAME% - "Debug|Win32"
    "%DEVENV%" %SOLUTION_NAME% /Build "Debug|Win32" /Project %PROJECT_NAME%
