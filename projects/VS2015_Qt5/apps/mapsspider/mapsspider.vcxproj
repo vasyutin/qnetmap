@@ -19,74 +19,178 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\..\mapsspider\src\mapsspiderdialog.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\..\mapsspider\src\mapsspider_translator.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc'ing %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\moc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe</AdditionalInputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\build\moc\mapsspider\moc_mapsspiderdialog.cpp" />
-    <ClCompile Include="..\..\..\..\build\moc\mapsspider\moc_mapsspider_translator.cpp" />
-    <ClCompile Include="..\..\..\..\build\moc\mapsspider\qrc_systray.cpp" />
     <ClCompile Include="..\..\..\..\mapsspider\src\jobsxmlparser.cpp" />
     <ClCompile Include="..\..\..\..\mapsspider\src\main.cpp" />
     <ClCompile Include="..\..\..\..\mapsspider\src\mapsspiderdialog.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\..\..\mapsspider\images\systray.qrc">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making resources for %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\..\..\mapsspider\images\globe32.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_1.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_10.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_2.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_3.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_4.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_5.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_6.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_7.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_8.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_9.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_accept.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_error.png</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making resources for %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\..\..\mapsspider\images\globe32.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_1.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_10.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_2.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_3.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_4.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_5.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_6.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_7.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_8.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_9.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_accept.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_error.png</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Making resources for %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)..\..\..\..\mapsspider\images\globe32.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_1.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_10.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_2.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_3.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_4.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_5.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_6.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_7.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_8.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_9.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_accept.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_error.png</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o $(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Making resources for %(Filename)%(Extension)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\..\build\moc\$(ProjectName)\qrc_%(Filename).cpp</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)..\..\..\..\mapsspider\images\globe32.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_1.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_10.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_2.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_3.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_4.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_5.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_6.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_7.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_8.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_9.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_accept.png;$(ProjectDir)..\..\..\..\mapsspider\images\globe32_error.png</AdditionalInputs>
-    </CustomBuild>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mapsspiderdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mapsspider_translator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_systray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mapsspiderdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mapsspider_translator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\..\mapsspider\icon\mapsspider_icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\mapsspider\images\systray.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);..\..\..\..\mapsspider\images\globe32.png;..\..\..\..\mapsspider\images\globe32_1.png;..\..\..\..\mapsspider\images\globe32_10.png;..\..\..\..\mapsspider\images\globe32_2.png;..\..\..\..\mapsspider\images\globe32_3.png;..\..\..\..\mapsspider\images\globe32_4.png;..\..\..\..\mapsspider\images\globe32_5.png;..\..\..\..\mapsspider\images\globe32_6.png;..\..\..\..\mapsspider\images\globe32_7.png;..\..\..\..\mapsspider\images\globe32_8.png;..\..\..\..\mapsspider\images\globe32_9.png;..\..\..\..\mapsspider\images\globe32_accept.png;..\..\..\..\mapsspider\images\globe32_error.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);..\..\..\..\mapsspider\images\globe32.png;..\..\..\..\mapsspider\images\globe32_1.png;..\..\..\..\mapsspider\images\globe32_10.png;..\..\..\..\mapsspider\images\globe32_2.png;..\..\..\..\mapsspider\images\globe32_3.png;..\..\..\..\mapsspider\images\globe32_4.png;..\..\..\..\mapsspider\images\globe32_5.png;..\..\..\..\mapsspider\images\globe32_6.png;..\..\..\..\mapsspider\images\globe32_7.png;..\..\..\..\mapsspider\images\globe32_8.png;..\..\..\..\mapsspider\images\globe32_9.png;..\..\..\..\mapsspider\images\globe32_accept.png;..\..\..\..\mapsspider\images\globe32_error.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);..\..\..\..\mapsspider\images\globe32.png;..\..\..\..\mapsspider\images\globe32_1.png;..\..\..\..\mapsspider\images\globe32_10.png;..\..\..\..\mapsspider\images\globe32_2.png;..\..\..\..\mapsspider\images\globe32_3.png;..\..\..\..\mapsspider\images\globe32_4.png;..\..\..\..\mapsspider\images\globe32_5.png;..\..\..\..\mapsspider\images\globe32_6.png;..\..\..\..\mapsspider\images\globe32_7.png;..\..\..\..\mapsspider\images\globe32_8.png;..\..\..\..\mapsspider\images\globe32_9.png;..\..\..\..\mapsspider\images\globe32_accept.png;..\..\..\..\mapsspider\images\globe32_error.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);..\..\..\..\mapsspider\images\globe32.png;..\..\..\..\mapsspider\images\globe32_1.png;..\..\..\..\mapsspider\images\globe32_10.png;..\..\..\..\mapsspider\images\globe32_2.png;..\..\..\..\mapsspider\images\globe32_3.png;..\..\..\..\mapsspider\images\globe32_4.png;..\..\..\..\mapsspider\images\globe32_5.png;..\..\..\..\mapsspider\images\globe32_6.png;..\..\..\..\mapsspider\images\globe32_7.png;..\..\..\..\mapsspider\images\globe32_8.png;..\..\..\..\mapsspider\images\globe32_9.png;..\..\..\..\mapsspider\images\globe32_accept.png;..\..\..\..\mapsspider\images\globe32_error.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\mapsspider\images\globe32.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_1.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_10.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_2.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_3.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_4.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_5.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_6.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_7.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_8.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_9.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_accept.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="..\..\..\..\mapsspider\images\globe32_error.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\mapsspider\src\mapsspider_translator.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mapsspider_translator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mapsspider_translator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mapsspider_translator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mapsspider_translator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\mapsspider\src\mapsspiderdialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mapsspiderdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mapsspiderdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -D_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_NO_DEBUG -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mapsspiderdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mapsspiderdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOTRAYICON -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_UNICODE "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\Qt" "-I$(ProjectDir)\." "-I$(ProjectDir)\..\..\..\..\lib\src" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E0ED009F-5108-4100-A404-55B25C93D873}</ProjectGuid>
