@@ -1,4 +1,5 @@
 /build/*
+GeneratedFiles
 /version/*
 *.user
 *.suo

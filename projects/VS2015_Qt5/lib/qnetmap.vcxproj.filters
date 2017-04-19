@@ -4,11 +4,23 @@
     <Filter Include="headers">
       <UniqueIdentifier>{bd2fdd1e-69a5-4190-a901-ea474eefc609}</UniqueIdentifier>
     </Filter>
-    <Filter Include="moc">
-      <UniqueIdentifier>{f64816c0-2ae6-491c-b57e-c16c019aa8cb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{d646a814-659b-4fca-82ba-75775180dfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{0e264334-db29-42aa-b0f5-6da3f401a35e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{a7ebbe1b-2aaf-4135-abc7-fdd34d7fce88}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -153,104 +165,239 @@
     <ClCompile Include="..\..\..\lib\src\qnetmap_widget.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_arbitraryfigure.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_arbitraryfigure.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_base.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_arbitraryfigure.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_coordinatesdialog.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_base.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_currentcoordinate.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_base.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_curve.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_coordinatesdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_geometry.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_coordinatesdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_geometrylayer.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_currentcoordinate.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_geometryobject.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_currentcoordinate.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_imagemanager.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_curve.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_imagepoint.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_curve.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_interfaces.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_emptymapadapter.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_label.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_emptymapadapter.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_layer.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_geometry.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_layermanager.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_geometry.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_loaddialogwizard.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_geometrylayer.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_loadprogressbar.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_geometrylayer.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_mapadapter.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_geometryobject.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_mapcontrol.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_geometryobject.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_maplayer.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_imagemanager.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_mapnetwork.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_imagemanager.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_point.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_imagepoint.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_polygon.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_imagepoint.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_rastermapadapter.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_interfaces.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_rastermapsdialog.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_interfaces.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_rulerscaling.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_label.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_shape.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_label.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_tilemapadapter.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_layer.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_translator.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_layer.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_universaltilemapadapter.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_layermanager.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_visual_elments.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_layermanager.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_widget.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_loaddialogwizard.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\build\moc\qnetmap\moc_qnetmap_emptymapadapter.cpp">
-      <Filter>moc</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_loaddialogwizard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_loadprogressbar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_loadprogressbar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_mapadapter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_mapadapter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_mapcontrol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_mapcontrol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_maplayer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_maplayer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_mapnetwork.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_mapnetwork.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_point.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_point.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_polygon.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_polygon.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_rastermapadapter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_rastermapadapter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_shape.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_shape.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_tilemapadapter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_tilemapadapter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_translator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_translator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_universaltilemapadapter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_universaltilemapadapter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_visual_elments.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_visual_elments.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_rulerscaling.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_rulerscaling.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qnetmap_rastermapsdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qnetmap_rastermapsdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_arbitraryfigure.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_base.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_coordinatesdialog.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_currentcoordinate.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_curve.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_emptymapadapter.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometry.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometrylayer.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometryobject.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_imagemanager.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_imagepoint.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_interfaces.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_label.h">
+      <Filter>headers</Filter>
+    </CustomBuild>
     <CustomBuild Include="..\..\..\lib\src\qnetmap_layer.h">
       <Filter>headers</Filter>
     </CustomBuild>
@@ -284,12 +431,6 @@
     <CustomBuild Include="..\..\..\lib\src\qnetmap_rastermapadapter.h">
       <Filter>headers</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_rastermapsdialog.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_rulerscaling.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\..\lib\src\qnetmap_shape.h">
       <Filter>headers</Filter>
     </CustomBuild>
@@ -308,43 +449,10 @@
     <CustomBuild Include="..\..\..\lib\src\qnetmap_widget.h">
       <Filter>headers</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_arbitraryfigure.h">
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_rulerscaling.h">
       <Filter>headers</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_base.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_coordinatesdialog.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_currentcoordinate.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_curve.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometry.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometrylayer.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_geometryobject.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_imagemanager.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_imagepoint.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_interfaces.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_label.h">
-      <Filter>headers</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\lib\src\qnetmap_emptymapadapter.h">
+    <CustomBuild Include="..\..\..\lib\src\qnetmap_rastermapsdialog.h">
       <Filter>headers</Filter>
     </CustomBuild>
   </ItemGroup>
