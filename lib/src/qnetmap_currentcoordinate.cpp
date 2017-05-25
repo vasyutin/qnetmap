@@ -55,7 +55,7 @@ namespace qnetmap
    QString RetText;
    QString SignX = (Point_.x() < 0.0) ? "-" : "";
    QString SignY = (Point_.y() < 0.0) ? "-" : "";
-   qreal x = abs(Point_.x()), y = abs(Point_.y());
+   qreal x = std::abs(Point_.x()), y = std::abs(Point_.y());
    int g1, g2, m1, m2;
    g1 = int(x); x = (x - g1) * 60;
    m1 = int(x); x = (x - m1) * 60;
@@ -86,8 +86,8 @@ namespace qnetmap
          QString(" %5") + QChar(0xB0) + QString(" %6' %7\" %8, %1") + QChar(0xB0) + QString(" %2' %3\" %4 ");
 			QString EW = Point_.x() >= 0 ? QNetMapTranslator::tr("E") : QNetMapTranslator::tr("W");
       QString NS = Point_.y() >= 0 ? QNetMapTranslator::tr("N") : QNetMapTranslator::tr("S");
-      RetText = Template.arg(abs(g1)).arg(abs(m1)).arg((qreal)abs(x), 0, 'g', 5).arg(EW)
-                        .arg(abs(g2)).arg(abs(m2)).arg((qreal)abs(y), 0, 'g', 5).arg(NS);
+      RetText = Template.arg(std::abs(g1)).arg(std::abs(m1)).arg((qreal)std::abs(x), 0, 'g', 5).arg(EW)
+                        .arg(std::abs(g2)).arg(std::abs(m2)).arg((qreal)std::abs(y), 0, 'g', 5).arg(NS);
       break;
       }
    case Consts::PixelCoordinates: {
