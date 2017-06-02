@@ -30,6 +30,7 @@ HEADERS += ../../../lib/src/qnetmap_arrowpoint.h \
     ../../../lib/src/qnetmap_pngimage.h \
     ../../../lib/src/qnetmap_point.h \
     ../../../lib/src/qnetmap_polygon.h \
+    ../../../lib/src/qnetmap_polyline.h \
     ../../../lib/src/qnetmap_rastermap.h \
     ../../../lib/src/qnetmap_rastermapadapter.h \
     ../../../lib/src/qnetmap_rastermapsdialog.h \
@@ -76,6 +77,7 @@ SOURCES += ../../../lib/src/qnetmap_arrowpoint.cpp \
     ../../../lib/src/qnetmap_pngimage.cpp \
     ../../../lib/src/qnetmap_point.cpp \
     ../../../lib/src/qnetmap_polygon.cpp \
+    ../../../lib/src/qnetmap_polyline.cpp \
     ../../../lib/src/qnetmap_rastermap.cpp \
     ../../../lib/src/qnetmap_rastermapadapter.cpp \
     ../../../lib/src/qnetmap_rastermapsdialog.cpp \
