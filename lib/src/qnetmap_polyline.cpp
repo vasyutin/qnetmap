@@ -776,12 +776,12 @@ namespace qnetmap
                K21 = K2 - K1;
                try {
                   Bias = (T.x() * K12.y() - T.y() * K12.x()) / (T.y() * K21.x() - T.x() * K21.y());
-                  if(abs(Bias) > 1.) Bias = sgn(Bias);
-                  if(abs(K12.x() + Bias * K21.x()) > abs(K12.y() + Bias * K21.y()))
+                  if(qAbs(Bias) > 1.) Bias = sgn(Bias);
+                  if(qAbs(K12.x() + Bias * K21.x()) > qAbs(K12.y() + Bias * K21.y()))
                        Tension = 1. - T.x() / (K12.x() + Bias * K21.x());
                   else Tension = 1. - T.y() / (K12.y() + Bias * K21.y());
-                  Tension = sgn(Tension) * std::max(abs(1. - T.x() / (K12.x() + Bias * K21.x())), abs(1. - T.y() / (K12.y() + Bias * K21.y())));
-                  if(abs(Tension) > 1.) Tension = sgn(Tension);
+                  Tension = sgn(Tension) * std::max(qAbs(1. - T.x() / (K12.x() + Bias * K21.x())), qAbs(1. - T.y() / (K12.y() + Bias * K21.y())));
+                  if(qAbs(Tension) > 1.) Tension = sgn(Tension);
                }
                catch(...) {}
                // check the tangent minimum length
@@ -803,7 +803,7 @@ namespace qnetmap
                case PolyLineInputPoint:
                   try {
                      T = CurrentPoint - Coordinate_;
-                     if(abs(K1.x() - K2.x()) > abs(K1.y() - K2.y()))
+                     if(qAbs(K1.x() - K2.x()) > qAbs(K1.y() - K2.y()))
                           Continuity = (T.x() - K1.x() - K2.x()) / (K1.x() - K2.x());
                      else Continuity = (T.y() - K1.y() - K2.y()) / (K1.y() - K2.y());
                   }
@@ -812,7 +812,7 @@ namespace qnetmap
                case PolyLineOutputPoint:
                   try {
                      T = - CurrentPoint + Coordinate_;
-                     if(abs(K2.x() - K1.x()) > abs(K2.y() - K1.y()))
+                     if(qAbs(K2.x() - K1.x()) > qAbs(K2.y() - K1.y()))
                           Continuity = (T.x() - K1.x() - K2.x()) / (K2.x() - K1.x());
                      else Continuity = (T.y() - K1.y() - K2.y()) / (K2.y() - K1.y());
                   }
@@ -948,7 +948,7 @@ namespace qnetmap
    //-------------------------------------------------------------------------------------
    void TPolyLine::TPolyLinePoint::setTension( const qreal Tension_ /*= 0*/ )
    {
-      if(abs(Tension_) > 1.) m_Tension = sgn(Tension_);
+      if(qAbs(Tension_) > 1.) m_Tension = sgn(Tension_);
       else                   m_Tension = Tension_;
       m_Factors = TFactors(m_Tension, m_Continuity, m_Bias);
    }
@@ -956,7 +956,7 @@ namespace qnetmap
    //-------------------------------------------------------------------------------------
    void TPolyLine::TPolyLinePoint::setContinuity( const qreal Continuity_ /*= 0*/ )
    {
-      if(abs(Continuity_) > 0.9) m_Continuity = sgn(Continuity_) * 0.9; // 0.9 is special value that cuts off the boundary effects
+      if(qAbs(Continuity_) > 0.9) m_Continuity = sgn(Continuity_) * 0.9; // 0.9 is special value that cuts off the boundary effects
       else                       m_Continuity = Continuity_;
       m_Factors = TFactors(m_Tension, m_Continuity, m_Bias);
    }
@@ -964,7 +964,7 @@ namespace qnetmap
    //-------------------------------------------------------------------------------------
    void TPolyLine::TPolyLinePoint::setBias( const qreal Bias_ /*= 0*/ )
    {
-      if(abs(Bias_) > 1.) m_Bias = sgn(Bias_);
+      if(qAbs(Bias_) > 1.) m_Bias = sgn(Bias_);
       else                m_Bias = Bias_;
       m_Factors = TFactors(m_Tension, m_Continuity, m_Bias);
    }
