@@ -12,6 +12,7 @@ CONFIG(release, debug|release) {
     MOC_DIR = $${OUT_PWD}/release/moc
     UI_DIR = $${OUT_PWD}/release/ui
     RCC_DIR = $${OUT_PWD}/release/rcc
+    DEFINES += NDEBUG
     }
 CONFIG(debug, debug|release) {
     DESTDIR = $${_PRO_FILE_PWD_}/../../../../build/debug
