@@ -8,7 +8,7 @@ help of QNetMap you can:
 * draw descriptive text;
 * identify features on a map by pointing at them etc.
 
-The project is originally based on the QMapControl library (http://qmapcontrol.sourceforge.net/) 
+The project is originally based on the QMapControl library (https://sourceforge.net/projects/qmapcontrol/) 
 by Kai Winter. To show the map QNetMap can use different providers like OpenStreetMap 
 or other WMS servers. The map data can be downloaded from the Internet or from the 
 disk cache. User's own raster maps can also be used.
