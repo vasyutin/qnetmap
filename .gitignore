@@ -10,5 +10,6 @@ moc_*.*
 qrc_*.*
 /projects/build*
 .vc
+.vs
 *.VC.opendb
 *.VC.db

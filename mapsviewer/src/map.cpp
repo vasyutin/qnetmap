@@ -628,7 +628,7 @@ public:
 		// Russian: Это программное обеспечение является частью  
 		// <a href="https://github.com/vasyutin/qnetmap">
 		// библиотеки QNetMap</a>. 
-		// Copyright (c) 2011-2017 JSC Sintels 
+		// Copyright (c) 2011-2019 JSC Sintels 
 		// (<a href="http://sintels.ru">http://sintels.ru</a>) and/or its affiliates.
 		// Copyright (c) 2012-2014 OJSC T8 
 		// (<a href="http://t8.ru">http://t8.ru</a>) and/or its affiliates.");
@@ -636,7 +636,7 @@ public:
 			"This software is a part of the  "
 			"<a href=\"https://github.com/vasyutin/qnetmap\">"
 			"QNetMap library</a>. "
-			"Copyright (c) 2011-2017 JSC Sintels "
+			"Copyright (c) 2011-2019 JSC Sintels "
 			"(<a href=\"http://sintels.ru\">http://sintels.ru</a>) and/or its affiliates."
 			"Copyright (c) 2012-2014 OJSC T8 "
 			"(<a href=\"http://t8.ru\">http://t8.ru</a>) and/or its affiliates.");
