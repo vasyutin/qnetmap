@@ -168,7 +168,7 @@
       <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;Qt5PrintSupportd.lib;Qt5Xmld.lib;qnetmap.lib</AdditionalDependencies>
     </Link>
     <BuildLog>
-      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -213,7 +213,7 @@
       <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5PrintSupport.lib;Qt5Xml.lib;qnetmap.lib</AdditionalDependencies>
     </Link>
     <BuildLog>
-      <Path>$(SolutionDir)\..\..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
+      <Path>$(SolutionDir)..\..\build\$(PlatformName)\$(Configuration)\obj\$(ProjectName)\$(ProjectName).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
