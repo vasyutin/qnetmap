@@ -112,9 +112,8 @@ OnQuitObject OQO;
 int RetValue = 1;
 if(Map.pluginsAreLoaded()) {
    // картографические плагины загружены, можно работать
-   Map.resize(800,600);
    Map.setWindowTitle(TMap::programTitle());
-   Map.show();
+   Map.showMaximized();
    RetValue = app.exec();
    Map.mapWidget()->abortLoading();
 	}

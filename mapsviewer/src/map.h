@@ -214,6 +214,11 @@ private:
    //! \param bool - признак отметки как выбранного
    void populateMenus(qnetmap::IMapAdapterInterface* MapInterface_, bool Checked_ = false);
 
+	#ifdef Q_OS_WIN
+		// The mutex preventing installer to work when the app is started
+		HANDLE m_InstallerMutex;
+	#endif
+
 public slots:
    //! \brief Подготовка к вычислению расстояния
    void calcDistance(void);

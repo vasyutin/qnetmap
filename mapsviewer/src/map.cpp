@@ -38,30 +38,20 @@
 
 #include "gpx.h"
 
+#ifdef Q_OS_WIN
+	#define INSTALLER_MUTEX_NAME L"qnetmap-app"
+#endif
+
 //------------------------------------------------------------------
 TMap::TMap(QWidget*) 
    : m_PluginsAreLoaded(false),
      w_RasterMapMainInterface(NULL)/*,
      m_MyObject(new MyObject)*/
 {
-/*
-// проба QWebKit
-m_WebView = new QWebView;
-m_WebFrame = m_WebView->page()->currentFrame();
-m_MyObject->setWebFrame(m_WebFrame);
-QNMASSERT(connect(m_WebFrame, SIGNAL(javaScriptWindowObjectCleared()), this, SLOT(populate()));
-m_WebFrame->setHtml(QString(
-   "<head>"
-   "<script src=\"http://api-maps.yandex.ru/2.0/?lang=ru-RU&load=package.route\" type=\"text/javascript\">"
-   "</script>"
-   "<script>"
-   "ymaps.ready(init);"
-   "function init () {myObject.YMapInitialized();}"
-   "</script>"
-   "</head>"
-   "<body>"
-   "</body>"));
-*/
+#ifdef Q_OS_WIN
+	// Create mutex to prevent installer to work when the app is started
+	m_InstallerMutex = CreateMutexW(NULL, FALSE, INSTALLER_MUTEX_NAME);
+#endif
 
 // определяем путь к плагинам
 QString PluginsPath = QApplication::applicationDirPath();
@@ -139,11 +129,9 @@ else {
 connect(w_MapWidget, SIGNAL(rubberRectSelected(const QRect, int)), this,
 	SLOT(rubberBandHasFinishedSelection(const QRect, int)));   
    
-// In order to create the status bar.
+// Create the status bar.
 statusBar()->showMessage(QString());
-
 }
-//$(BIN_DIR)\qnetmap\plugins\$(PlatformName)\$(ConfigurationName)
 
 //------------------------------------------------------------------
 TMap::~TMap()
@@ -159,6 +147,9 @@ TMap::~TMap()
    delete m_WebView;
    delete m_MyObject;
    */
+#ifdef Q_OS_WIN
+	if(m_InstallerMutex) CloseHandle(m_InstallerMutex);
+#endif
 }
 
 //------------------------------------------------------------------
