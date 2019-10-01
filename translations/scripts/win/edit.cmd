@@ -1,13 +1,6 @@
 @echo off
-set QTBIN=%QTDIR%\bin
-
-if %QTDIR%_ == _ (
-   if %QTDIR64%_ == _ (
-      echo Neither QTDIR of QTDIR64 are defined.
-      exit 1
-   ) else (
-      set QTBIN=%QTDIR64%\bin
+if %QTDIR%_==_ (
+   echo Error! The environment variable QTDIR is not defined.
+   exit /B 1
    )
-)
-
-start %QTBIN%\linguist.exe ..\..\qnetmap_ru.ts
+start %QTDIR%\bin\linguist.exe ..\..\qnetmap_ru.ts

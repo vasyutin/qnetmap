@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
-<defaultcodec>UTF-8</defaultcodec>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>MapsSpiderTranslator</name>
     <message>
@@ -339,38 +338,38 @@ Options:
         <location filename="../mapsviewer/src/gpx.cpp" line="38"/>
         <location filename="../mapsviewer/src/gpx.cpp" line="80"/>
         <source>Invalid XML root element.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправильный корневой элемент XML.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="57"/>
         <location filename="../mapsviewer/src/gpx.cpp" line="108"/>
         <source>Invalid GPS coordinate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправильные координаты GPS.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="68"/>
         <source>No waypoints data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет маршрутных точек.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="127"/>
         <source>No route data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет данных маршрута.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="142"/>
         <source>Can&apos;t open file &apos;%1&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка при открытии файла &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="150"/>
         <source>File &apos;%1&apos; has error in line %2, column %3: %4.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка в файле &apos;%1&apos; в строке %2, столбце %3: %4.</translation>
     </message>
     <message>
         <location filename="../mapsviewer/src/gpx.cpp" line="189"/>
         <source>File &apos;%1&apos; contains no waypoint or route data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл &apos;%1&apos; не содержит маршрутных точек или данных маршрута.</translation>
     </message>
 </context>
 <context>
@@ -816,32 +815,32 @@ line %2, position %3
         <location filename="../lib/src/qnetmap_visual_elments.h" line="62"/>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="232"/>
         <source>All files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Все файлы (*.*)</translation>
     </message>
     <message>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="70"/>
         <source>Folder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Папка...</translation>
     </message>
     <message>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="73"/>
         <source>File...</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл...</translation>
     </message>
     <message>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="76"/>
         <source>The object type to browse is invalid.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправильный тип объекта</translation>
     </message>
     <message>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="111"/>
         <source>Select folder</source>
-        <translation type="unfinished">Выберите папку</translation>
+        <translation>Выберите папку</translation>
     </message>
     <message>
         <location filename="../lib/src/qnetmap_visual_elments.h" line="115"/>
         <source>Select file</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите файл</translation>
     </message>
 </context>
 </TS>

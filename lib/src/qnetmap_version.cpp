@@ -26,13 +26,17 @@ namespace qnetmap {
 // -----------------------------------------------------------------------
 int QNETMAP_EXPORT VersionMinor(void)
 {
-return QNETMAP_VERSION_MINOR;
+return
+#include "qnetmap_version_minor.h"
+;
 }
 
 // -----------------------------------------------------------------------
 int QNETMAP_EXPORT VersionMajor(void)
 {
-return QNETMAP_VERSION_MAJOR;
+return
+#include "qnetmap_version_major.h"
+;
 }
 
 // -----------------------------------------------------------------------
