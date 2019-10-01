@@ -29,6 +29,10 @@
 
 #include <qnetmap_version.h>
 
+#ifdef Q_OS_WIN
+	#define INSTALLER_MUTEX_NAME L"qnetmap-app"
+#endif
+
 //! \var список загружаемых карт
 std::vector<TMapParameters> g_Maps;
 //! \var количество одновременных запросов
@@ -58,6 +62,11 @@ TMapsSpiderDialog::TMapsSpiderDialog(bool ShowTrayIcon_):
       m_OldLoadedTilesCount(0),
       m_OldSecondsLeft(0)
 {
+#ifdef Q_OS_WIN
+	// Create mutex to prevent installer to work when the app is started
+	m_InstallerMutex = CreateMutexW(NULL, FALSE, INSTALLER_MUTEX_NAME);
+#endif
+
 g_SimultaneousRequestsCount = 50;
 QSettings Settings(qnetmap::QNetMapConsts::Organization, Consts::Application);
 
@@ -161,6 +170,10 @@ saveComboBox(w_FileComboBox,      "XMLFileName", 10);
 saveComboBox(w_DirectoryComboBox, "MapsSavePath", 10);
 
 delete w_ProgressBarStyle;
+
+#ifdef Q_OS_WIN
+	if(m_InstallerMutex) CloseHandle(m_InstallerMutex);
+#endif
 }
 
 //------------------------------------------------------------------

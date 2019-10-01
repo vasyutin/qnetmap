@@ -244,6 +244,11 @@ private:
    QMap<int, QNetworkAccessManager*> m_NetworkManagers;
    // \var количество классов - загрузчиков
    unsigned int m_CountNetworkManagers;
-};
+
+	#ifdef Q_OS_WIN
+		// The mutex preventing installer to work when the app is started
+		HANDLE m_InstallerMutex;
+	#endif
+	};
 
 #endif
