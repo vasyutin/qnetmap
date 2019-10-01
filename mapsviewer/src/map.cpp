@@ -200,7 +200,7 @@ w_ToolsRasterMaps = new QAction(MapsViewerTranslator::tr("Raster maps..."
 	/* Russian: Растровые карты... */), this);
 connect(w_ToolsRasterMaps, SIGNAL(triggered(bool)), this, SLOT(rasterMapsDialog()));
 
-w_ToolsConfiguration = new QAction(MapsViewerTranslator::tr("Settings"), this);
+w_ToolsConfiguration = new QAction(MapsViewerTranslator::tr("Settings") + "...", this);
 w_ToolsConfiguration->setIcon(LoadPixmapFromData(properties16x16, sizeof(properties16x16)));
 connect(w_ToolsConfiguration, SIGNAL(triggered(bool)), this, SLOT(configuration()));
 
