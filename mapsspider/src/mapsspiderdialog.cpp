@@ -95,7 +95,7 @@ buttonsLayout->addWidget(w_StopButton);
 buttonsLayout->addWidget(w_StartButton);
 buttonsLayout->addWidget(w_ExitButton);
 
-// лайоут
+//
 QGridLayout *MainLayout = new QGridLayout;
 MainLayout->setColumnStretch(1, 1);
 MainLayout->setRowMinimumHeight(2, 10);
@@ -322,7 +322,6 @@ QString Directory = QDir::toNativeSeparators(
 	// Russian:	Выберите каталог
    QFileDialog::getExistingDirectory(this, MapsSpiderTranslator::tr("Select folder"), 
    QDir::currentPath()));
-
 
 if (!Directory.isEmpty()) {
    if (w_DirectoryComboBox->findText(Directory) == -1)

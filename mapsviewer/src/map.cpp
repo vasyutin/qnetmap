@@ -3,7 +3,7 @@
 * an open-source cross-platform demonstration program for viewing maps, 
 * based on the library QNetMap
 *
-* Copyright (c) 2011-2014 JSC Sintels (sintels.ru) and/or its affiliates.
+* Copyright (c) 2011-2019 JSC Sintels (sintels.ru) and/or its affiliates.
 * Copyright (c) 2012-2014 OJSC T8 (t8.ru) and/or its affiliates.
 *
 * This program is free software: you can redistribute it and/or modify

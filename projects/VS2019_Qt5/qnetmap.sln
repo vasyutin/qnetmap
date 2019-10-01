@@ -36,11 +36,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mapsviewer", "apps\mapsview
 		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spider_task_creator", "apps\spidertaskcreator\spidertaskcreator.vcxproj", "{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}"
-	ProjectSection(ProjectDependencies) = postProject
-		{936A9938-0B44-420A-BDFF-0825E16DE0BE} = {936A9938-0B44-420A-BDFF-0825E16DE0BE}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,10 +66,6 @@ Global
 		{06AE7C47-6EFD-473B-84B3-660D51B6AB44}.Debug|x64.Build.0 = Debug|x64
 		{06AE7C47-6EFD-473B-84B3-660D51B6AB44}.Release|x64.ActiveCfg = Release|x64
 		{06AE7C47-6EFD-473B-84B3-660D51B6AB44}.Release|x64.Build.0 = Release|x64
-		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}.Debug|x64.ActiveCfg = Debug|x64
-		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}.Debug|x64.Build.0 = Debug|x64
-		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}.Release|x64.ActiveCfg = Release|x64
-		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,10 +77,9 @@ Global
 		{3DD7128A-0C13-4A47-A3FB-351DECEA3108} = {F8276669-2907-47EA-B150-2FA092325646}
 		{E0ED009F-5108-4100-A404-55B25C93D873} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
 		{06AE7C47-6EFD-473B-84B3-660D51B6AB44} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
-		{BD3D45C1-EE5A-436A-8590-8EC1EC3EA743} = {228DE823-D0BA-4DC4-8832-809949BEDDA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		Qt5Version = $(DefaultQtVersion)
 		SolutionGuid = {EFF19E91-7315-4B6F-A019-284453EEE260}
+		Qt5Version = $(DefaultQtVersion)
 	EndGlobalSection
 EndGlobal
