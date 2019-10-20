@@ -8,18 +8,18 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 DEFINES += _BUILD_SPIDER_TASK_CREATOR
 
 CONFIG(release, debug|release) {
-    DESTDIR = $${_PRO_FILE_PWD_}/../../../../build/release
-    OBJECTS_DIR = $${OUT_PWD}/release/obj
-    MOC_DIR = $${OUT_PWD}/release/moc
-    UI_DIR = $${OUT_PWD}/release/ui
-    DEFINES += NDEBUG
-    }
+	DESTDIR = $${_PRO_FILE_PWD_}/../../../../build/$$QT_ARCH/$$QT_VERSION/release
+	OBJECTS_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/release/obj
+	MOC_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/release/moc
+	UI_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/release/ui
+	DEFINES += NDEBUG
+	}
 CONFIG(debug, debug|release) {
-    DESTDIR = $${_PRO_FILE_PWD_}/../../../../build/debug
-    OBJECTS_DIR = $${OUT_PWD}/debug/obj
-    MOC_DIR = $${OUT_PWD}/debug/moc
-    UI_DIR = $${OUT_PWD}/debug/ui
-    }
+	DESTDIR = $${_PRO_FILE_PWD_}/../../../../build/$$QT_ARCH/$$QT_VERSION/debug
+	OBJECTS_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/debug/obj
+	MOC_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/debug/moc
+	UI_DIR = $${OUT_PWD}/$$QT_ARCH/$$QT_VERSION/debug/ui
+	}
 
 LIBS += -L"$${DESTDIR}" -lqnetmap
 INCLUDEPATH += ../../../../lib/src ../../../../lib
