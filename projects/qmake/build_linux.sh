@@ -6,4 +6,4 @@ fi
 
 cd ../../build
 qmake ../projects/qmake/qnetmap.pro
-make
+make -j$(($(nproc) - 1))
